@@ -1,0 +1,183 @@
+{
+  "analysis_summary": {
+    "total_chunks_scanned": 9480,
+    "tools_found": 20
+  },
+  "easyops_competitive_landscape": {
+    "direct_deduction_tools": {
+      "Crstl": {
+        "chunks": 10,
+        "episodes": 6,
+        "note": "EDI/order management, mentioned in ops contexts. Episode #162 (Ops Nightmares) features Teva Vogelstein from Crstl discussing chargebacks."
+      },
+      "Vividly": {
+        "chunks": 3,
+        "episodes": 3,
+        "note": "Trade promotion management. Low mention count suggests low brand awareness among CPG founders."
+      }
+    },
+    "adjacent_finance_tools": {
+      "QuickBooks": {
+        "chunks": 22,
+        "episodes": 10,
+        "note": "Default accounting tool for early-stage CPG brands. Mentioned in inventory and ops contexts."
+      },
+      "Settle": {
+        "chunks": 3,
+        "episodes": 3,
+        "note": "CPG-specific financial operations. Low awareness."
+      },
+      "Northall": {
+        "chunks": 1,
+        "episodes": 1,
+        "note": "CPG finance consultancy. One dedicated episode with Ryan Williams."
+      },
+      "Graphite": {
+        "chunks": 8,
+        "episodes": 4,
+        "note": "Financial planning for CPG. More mentions than Settle."
+      },
+      "Ampla": {
+        "chunks": 0,
+        "episodes": 0,
+        "note": "Not mentioned at all despite being a known CPG finance tool."
+      }
+    },
+    "retail_data_tools": {
+      "SPINS": {
+        "chunks": 33,
+        "episodes": 26,
+        "note": "Most-mentioned data tool. Deeply embedded in CPG vocabulary — buyers reference SPINS data constantly."
+      },
+      "IRI": {
+        "chunks": 3,
+        "episodes": 2,
+        "note": "Lower awareness than SPINS among emerging brands."
+      },
+      "Crisp": {
+        "chunks": 4,
+        "episodes": 4,
+        "note": "Retail analytics. Low but growing mentions."
+      },
+      "Byzzer": {
+        "chunks": 1,
+        "episodes": 1,
+        "note": "Minimal awareness."
+      }
+    },
+    "operations_tools": {
+      "SPS Commerce": {
+        "chunks": 10,
+        "episodes": 2,
+        "note": "EDI platform. One dedicated episode (#159). Well-known among ops-focused brands."
+      },
+      "DrivePoint": {
+        "chunks": 11,
+        "episodes": 1,
+        "note": "Forecasting tool. One dedicated episode (#218) generated all mentions."
+      },
+      "Cin7": {
+        "chunks": 0,
+        "episodes": 0,
+        "note": "Not mentioned directly (though episode #139 features Cin7's Cory Hebert)."
+      }
+    },
+    "key_gap": "NO deduction-specific management tool is mentioned ANYWHERE in 361 episodes. Crstl is the closest (EDI/order management with chargeback implications), but it's positioned as an operations tool, not a deduction recovery tool. Vividly (trade spend) has only 3 mentions. The deduction management category essentially doesn't exist in this ecosystem's vocabulary."
+  },
+  "rankings_by_category": {
+    "retail_data": [
+      [
+        "SPINS",
+        33
+      ],
+      [
+        "Crisp",
+        4
+      ],
+      [
+        "IRI",
+        3
+      ],
+      [
+        "Byzzer",
+        1
+      ]
+    ],
+    "fundraising": [
+      [
+        "WeFunder",
+        36
+      ],
+      [
+        "Republic",
+        4
+      ],
+      [
+        "CircleUp",
+        3
+      ]
+    ],
+    "accounting": [
+      [
+        "QuickBooks",
+        22
+      ],
+      [
+        "Xero",
+        1
+      ]
+    ],
+    "retail_discovery": [
+      [
+        "RangeMe",
+        23
+      ]
+    ],
+    "forecasting": [
+      [
+        "DrivePoint",
+        11
+      ],
+      [
+        "Graphite",
+        8
+      ]
+    ],
+    "edi_operations": [
+      [
+        "Crstl",
+        10
+      ],
+      [
+        "SPS Commerce",
+        10
+      ]
+    ],
+    "cpg_finance": [
+      [
+        "Settle",
+        3
+      ],
+      [
+        "Northall",
+        1
+      ]
+    ],
+    "trade_spend": [
+      [
+        "Vividly",
+        3
+      ]
+    ],
+    "distribution": [
+      [
+        "Pod Foods",
+        2
+      ],
+      [
+        "Faire",
+        1
+      ]
+    ]
+  }
+}

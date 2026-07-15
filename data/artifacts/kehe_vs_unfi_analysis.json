@@ -1,0 +1,195 @@
+{
+  "chunk_counts": {
+    "kehe_only": 47,
+    "unfi_only": 128,
+    "both": 14
+  },
+  "kehe_topics": {
+    "Distribution (UNFI/KeHE)": 30,
+    "Retail strategy & channel expansion": 27,
+    "Trade shows & live events": 12,
+    "Sustainability, impact & mission-driven brands": 10,
+    "Founder journey & brand origin story": 10,
+    "DTC & local market traction": 8,
+    "Trade spend & deductions": 7,
+    "Community events & brand announcements": 6,
+    "Supply chain & sourcing": 5,
+    "Marketing spend & brand building": 5,
+    "Sampling & in-store demos": 4,
+    "Category trends & consumer behavior": 4,
+    "Clean label & non-UPF": 3,
+    "Fundraising & investor relations": 2,
+    "Influencer marketing & creator partnerships": 2,
+    "Packaging & format innovation": 2,
+    "Ecommerce & Amazon": 1,
+    "Team building & hiring": 1
+  },
+  "unfi_topics": {
+    "Distribution (UNFI/KeHE)": 128,
+    "Retail strategy & channel expansion": 77,
+    "Trade shows & live events": 32,
+    "DTC & local market traction": 19,
+    "Supply chain & sourcing": 16,
+    "Founder journey & brand origin story": 15,
+    "Community events & brand announcements": 13,
+    "Sampling & in-store demos": 11,
+    "Influencer marketing & creator partnerships": 10,
+    "Fundraising & investor relations": 9,
+    "Trade spend & deductions": 9,
+    "Sustainability, impact & mission-driven brands": 9,
+    "Brokers & sales team structure": 6,
+    "Founder introductions & where-to-find": 6,
+    "Category trends & consumer behavior": 4,
+    "Packaging & format innovation": 3,
+    "Marketing spend & brand building": 3,
+    "Ecommerce & Amazon": 2,
+    "Formulation & co-packing operations": 2,
+    "Clean label & non-UPF": 2,
+    "M&A & exit strategy": 2,
+    "Legal structure & co-man contracts": 1,
+    "AI tools & automation for CPG": 1,
+    "Skincare & beauty CPG": 1
+  },
+  "kehe_pain_points": {
+    "relationship_comm": 17,
+    "fees_charges": 15,
+    "logistics_ops": 12,
+    "onboarding_setup": 12,
+    "compliance_routing": 5,
+    "deduction_chargeback": 5,
+    "promo_merchandising": 4
+  },
+  "unfi_pain_points": {
+    "relationship_comm": 39,
+    "logistics_ops": 27,
+    "onboarding_setup": 25,
+    "fees_charges": 19,
+    "promo_merchandising": 9,
+    "deduction_chargeback": 6,
+    "compliance_routing": 5
+  },
+  "top_kehe_episodes": [
+    [
+      "#189 -  Distributor Spotlight: Tim Dornfeld, KeHE",
+      16
+    ],
+    [
+      "#242 - KeHE Grocery Run Recap",
+      12
+    ],
+    [
+      "#215 - Ask-Me-Anything with Sales Pro Matt Merson",
+      4
+    ],
+    [
+      "#162 - Ops Nightmares, Powered by Crstl",
+      2
+    ],
+    [
+      "#256 - What Is Grocery Run? with Dan Choi (NA Beverage Co) and Stephanie McGregor (Ringa)",
+      2
+    ],
+    [
+      "Founder Feature: BJ McCaslin of Holy! Water",
+      2
+    ],
+    [
+      "#218 - Forecasting 101 with Graza & Drivepoint",
+      1
+    ],
+    [
+      "#166 - CPG Trade Media: Elizabeth Crawford, Brooke Just, and Adrianne DeLuca",
+      1
+    ],
+    [
+      "Founder Feature: Charlie Gentry of TruJoy",
+      1
+    ],
+    [
+      "Founder Feature: Susan Hartman of Recoup Beverages",
+      1
+    ],
+    [
+      "#94 Buyer Series: Fostering good buyer vibes with Wade Yenny & Alex Bayer",
+      1
+    ],
+    [
+      "#93 Creating a More Equitable & Transparent Food System with Amazi",
+      1
+    ],
+    [
+      "#150 - Field Sales Part 1: Sean Lynch, Halfday & Liquid Death",
+      1
+    ],
+    [
+      "#254 - Buyer Spotlight: Hannah Koch, Supplements Buyer, Kimberton Whole Foods",
+      1
+    ],
+    [
+      "#250 - Jacob Trumbull of Roaring Fork Mill: Heritage Grains, Regenerative Organic Certification, and How Startup CPG Opportunities Unlocked 700 Stores",
+      1
+    ]
+  ],
+  "top_unfi_episodes": [
+    [
+      "#164- UNFI UpNext Program: Aaron May",
+      20
+    ],
+    [
+      "#223 - Startup CPG Innovation Sections at UNFI Selling Shows ft. Jubilee’s and Loopini Pizza",
+      14
+    ],
+    [
+      "#215 - Ask-Me-Anything with Sales Pro Matt Merson",
+      12
+    ],
+    [
+      "#174 - Buyer Spotlight: Heidi Traore and Jeanette Bloss, National Co+op Grocers",
+      7
+    ],
+    [
+      "#152 Direct Store Delivery 101:  Allison Taylor, Pint Size Hawaii, and Ahmed Chehade, Good Stuff",
+      6
+    ],
+    [
+      "Bonus: Getting Into Retail & Tips from a Buyer",
+      5
+    ],
+    [
+      "#256 - What Is Grocery Run? with Dan Choi (NA Beverage Co) and Stephanie McGregor (Ringa)",
+      4
+    ],
+    [
+      "#150 - Field Sales Part 1: Sean Lynch, Halfday & Liquid Death",
+      4
+    ],
+    [
+      "#136: Growing Jaju Pierogi with Social Media Pro Vanessa White",
+      4
+    ],
+    [
+      "Bonus - Startup CPG's New Innovation Section @ UNFI Selling Shows",
+      3
+    ],
+    [
+      "#122 How to Launch in Foodservice with Sales Pro Jenna Cameron Part 2",
+      3
+    ],
+    [
+      "How to Win At Kroger",
+      3
+    ],
+    [
+      "#147 - Rising Star: Simon Solis-Cohen, Huxley",
+      3
+    ],
+    [
+      "#153 - Buyer Spotlight: Tyler Killgore, GreenAcres Market",
+      3
+    ],
+    [
+      "Founder Feature: Suzannah Raff of Cleo+Coco",
+      2
+    ]
+  ]
+}

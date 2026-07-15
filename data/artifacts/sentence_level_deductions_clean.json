@@ -1,0 +1,1190 @@
+{
+  "total_sentences": 186209,
+  "deduction_sentences": 79,
+  "percentage": 0.042,
+  "term_frequency": {
+    "trade_spend": 27,
+    "off_invoice": 20,
+    "spoilage": 10,
+    "chargeback": 6,
+    "deduction": 6,
+    "slotting": 5,
+    "mcb": 5,
+    "billback": 1
+  },
+  "sentences_with_numbers": 18,
+  "gold_quotes": [
+    {
+      "sentence": "There are some retailers that will charge a 4k slotting fee per flavor per door to go into.",
+      "categories": [
+        "slotting"
+      ],
+      "speaker": "Jeff Church",
+      "speaker_role": "Founder (probable)",
+      "episode": "#123 Jeff Church's Lessons on Entrepreneurship, from Suja Juice $140 Million/year Success to Shutting down Rowdy Energy",
+      "is_host": false,
+      "has_number": true
+    },
+    {
+      "sentence": "Sometimes when I think about Ke and UNFI's promo calendar and if I have, you know, four months of promotion, let's say March, you know, June, September, December, I'm on 10% OI that or 15% OI that I know is going to drive a tag in the store.",
+      "categories": [
+        "off_invoice"
+      ],
+      "speaker": "Matt Merson",
+      "speaker_role": "Sales Professional",
+      "episode": "#215 - Ask-Me-Anything with Sales Pro Matt Merson",
+      "is_host": false,
+      "has_number": true
+    },
+    {
+      "sentence": "And what it is it's a 2% off invoice allowance that runs through that first year.",
+      "categories": [
+        "off_invoice"
+      ],
+      "speaker": "Tim Dornfeld",
+      "speaker_role": "Distributor (KeHE VP)",
+      "episode": "#189 -  Distributor Spotlight: Tim Dornfeld, KeHE",
+      "is_host": false,
+      "has_number": true
+    },
+    {
+      "sentence": "But to support that there's also a 2% off invoice that allows you to have access to it.",
+      "categories": [
+        "off_invoice"
+      ],
+      "speaker": "Tim Dornfeld",
+      "speaker_role": "Distributor (KeHE VP)",
+      "episode": "#189 -  Distributor Spotlight: Tim Dornfeld, KeHE",
+      "is_host": false,
+      "has_number": true
+    },
+    {
+      "sentence": "I always wanted to try and price in 15 to 20% of trade spend so that we're a brand that has to be on promo.",
+      "categories": [
+        "trade_spend"
+      ],
+      "speaker": "Daniel Scharff",
+      "speaker_role": "Host",
+      "episode": "#186 - Bootstrap Heroes: Bumpin Blends, Lentiful and Drink Wholesome",
+      "is_host": true,
+      "has_number": true
+    },
+    {
+      "sentence": "Chargeback from UNFI for $15,000 at Christmas time, another Merry Christmas.",
+      "categories": [
+        "chargeback"
+      ],
+      "speaker": "Vanessa White",
+      "speaker_role": "Founder",
+      "episode": "#136: Growing Jaju Pierogi with Social Media Pro Vanessa White",
+      "is_host": false,
+      "has_number": true
+    },
+    {
+      "sentence": "But when you're talking about something like an off invoice, like if you're talking about 20, 30%, that's not off, like the price that you sell your case to Kahi or Unifi, it's actually calculated off the price that they're like selling, which includes their margin.",
+      "categories": [
+        "off_invoice"
+      ],
+      "speaker": "Daniel Scharff",
+      "speaker_role": "Host",
+      "episode": "#145 Distributor Trade Shows with Samuel Jacobson, HOP WTR",
+      "is_host": true,
+      "has_number": true
+    },
+    {
+      "sentence": "And by the way October is when I have that 15% off invoice.",
+      "categories": [
+        "off_invoice"
+      ],
+      "speaker": "Daniel Scharff",
+      "speaker_role": "Host",
+      "episode": "#145 Distributor Trade Shows with Samuel Jacobson, HOP WTR",
+      "is_host": true,
+      "has_number": true
+    },
+    {
+      "sentence": "So if you do a deal on the iPad for 30% and you have an off invoice running in July for 15, they're going to take account of the off invoice and give it a total of 30.",
+      "categories": [
+        "off_invoice"
+      ],
+      "speaker": "Daniel Scharff",
+      "speaker_role": "Host",
+      "episode": "#145 Distributor Trade Shows with Samuel Jacobson, HOP WTR",
+      "is_host": true,
+      "has_number": true
+    },
+    {
+      "sentence": "But if you submit a turnover and submit 30% and you have an off invoice going, it could actually double that. so yeah, it's definitely something to be careful about.",
+      "categories": [
+        "off_invoice"
+      ],
+      "speaker": "Daniel Scharff",
+      "speaker_role": "Host",
+      "episode": "#145 Distributor Trade Shows with Samuel Jacobson, HOP WTR",
+      "is_host": true,
+      "has_number": true
+    },
+    {
+      "sentence": "And there will also be a very significant slotting charge for that fee if you get national distribution, call it 2200 stores plus, in every Kroger division, roughly $150,000 slotting.",
+      "categories": [
+        "slotting"
+      ],
+      "speaker": "Daniel Scharf",
+      "speaker_role": "Host",
+      "episode": "How to Win At Kroger",
+      "is_host": true,
+      "has_number": true
+    },
+    {
+      "sentence": "I remember one time working with a broker, I think, you know, one thing were very happy that we managed to do was at least change that commission number like the 5% from gross sales to net sales so that we're deducting all of the big slotting fees and the promos before we're paying a percentage on that.",
+      "categories": [
+        "deduction"
+      ],
+      "speaker": "Matt Merson",
+      "speaker_role": "Sales Professional",
+      "episode": "#205 - CPG Brokers 101 with Matt Merson",
+      "is_host": false,
+      "has_number": true
+    },
+    {
+      "sentence": "So if you have a 15% OI month or you run a special buy get deal, anything that reduces the price is a net revenue to the company and then you should be paying your brokerage off of net revenue.",
+      "categories": [
+        "off_invoice"
+      ],
+      "speaker": "Matt Merson",
+      "speaker_role": "Sales Professional",
+      "episode": "#205 - CPG Brokers 101 with Matt Merson",
+      "is_host": false,
+      "has_number": true
+    },
+    {
+      "sentence": "So whether that's buy two cases at full revenue and get two free or if you want to MCB me back 50% for each case, I'll cover free fill for d stores at 50%, c stores at 25%.",
+      "categories": [
+        "mcb"
+      ],
+      "speaker": "Matt Merson",
+      "speaker_role": "Sales Professional",
+      "episode": "#205 - CPG Brokers 101 with Matt Merson",
+      "is_host": false,
+      "has_number": true
+    },
+    {
+      "sentence": "And her understanding, both of their understanding of trade spending and the stuff that we should be spending on, should we be spending 20%, should we be spending 40%?",
+      "categories": [
+        "trade_spend"
+      ],
+      "speaker": "Brian Bethke",
+      "speaker_role": "Founder (probable)",
+      "episode": "Founder Feature: Brian Bethke of BEAR Maple Farms",
+      "is_host": false,
+      "has_number": true
+    },
+    {
+      "sentence": "There's such a huge range and me coming from the music industry, if I go and have those conversations myself, they're going to sell me on like 40% trade spend and I'm not going to know what the baseline is.",
+      "categories": [
+        "trade_spend"
+      ],
+      "speaker": "Brian Bethke",
+      "speaker_role": "Founder (probable)",
+      "episode": "Founder Feature: Brian Bethke of BEAR Maple Farms",
+      "is_host": false,
+      "has_number": true
+    },
+    {
+      "sentence": "Because these distributors, they'll take not only the four weeks of promotion on OI, but they take two weeks before and two weeks after, and it's 100% of the loads that are going into the distributor.",
+      "categories": [
+        "off_invoice"
+      ],
+      "speaker": "Matt Merson",
+      "speaker_role": "Sales Professional",
+      "episode": "#193 - How to Drive Velocity with Matt Merson",
+      "is_host": false,
+      "has_number": true
+    },
+    {
+      "sentence": "Now, if you're a shelf stable brand, why not buy up heavy and load in on the weeks that the distributor is getting? 10, 15% OI.",
+      "categories": [
+        "off_invoice"
+      ],
+      "speaker": "Matt Merson",
+      "speaker_role": "Sales Professional",
+      "episode": "#193 - How to Drive Velocity with Matt Merson",
+      "is_host": false,
+      "has_number": true
+    }
+  ],
+  "all_sentences": [
+    {
+      "sentence": "Going through distribution, margins, shelf life, write offs, trade spend, guaranteed.",
+      "categories": [
+        "trade_spend"
+      ],
+      "speaker": "Nikhil Arora",
+      "speaker_role": "Guest (unclassified)",
+      "episode": "#169 - \"How to Take Advice\" with Nikhil Arora",
+      "is_host": false,
+      "has_number": false
+    },
+    {
+      "sentence": "Like a bill back or a rebate or something like that.",
+      "categories": [
+        "billback"
+      ],
+      "speaker": "Daniel Scharf",
+      "speaker_role": "Host",
+      "episode": "#121 How to Launch in Foodservice with Sales Pro Jenna Cameron Part 1",
+      "is_host": true,
+      "has_number": false
+    },
+    {
+      "sentence": "Or it could be pay to play kind of like a slotting fee.",
+      "categories": [
+        "slotting"
+      ],
+      "speaker": "Jenna",
+      "speaker_role": "Sales Professional",
+      "episode": "#121 How to Launch in Foodservice with Sales Pro Jenna Cameron Part 1",
+      "is_host": false,
+      "has_number": false
+    },
+    {
+      "sentence": "There are some retailers that will charge a 4k slotting fee per flavor per door to go into.",
+      "categories": [
+        "slotting"
+      ],
+      "speaker": "Jeff Church",
+      "speaker_role": "Founder (probable)",
+      "episode": "#123 Jeff Church's Lessons on Entrepreneurship, from Suja Juice $140 Million/year Success to Shutting down Rowdy Energy",
+      "is_host": false,
+      "has_number": true
+    },
+    {
+      "sentence": "They will help you figure out where your trade spend is going.",
+      "categories": [
+        "trade_spend"
+      ],
+      "speaker": null,
+      "speaker_role": "Guest (unclassified)",
+      "episode": "#109 The Third Annual Shelfies Awards Ceremony Live!",
+      "is_host": false,
+      "has_number": false
+    },
+    {
+      "sentence": "And I do not want to take from trade spend because they have their own function.",
+      "categories": [
+        "trade_spend"
+      ],
+      "speaker": "Daniel Scharff",
+      "speaker_role": "Host",
+      "episode": "#199 - How to Drive Velocity with Marketing with Janice Greenwald",
+      "is_host": true,
+      "has_number": false
+    },
+    {
+      "sentence": "Sometimes when I think about Ke and UNFI's promo calendar and if I have, you know, four months of promotion, let's say March, you know, June, September, December, I'm on 10% OI that or 15% OI that I know is going to drive a tag in the store.",
+      "categories": [
+        "off_invoice"
+      ],
+      "speaker": "Matt Merson",
+      "speaker_role": "Sales Professional",
+      "episode": "#215 - Ask-Me-Anything with Sales Pro Matt Merson",
+      "is_host": false,
+      "has_number": true
+    },
+    {
+      "sentence": "You have to be thinking about what months next year do I want to promote with an OI allowance where we'll get passed down to my retail partners and I'll get a yellow tag on the shelf that says on sale.",
+      "categories": [
+        "off_invoice"
+      ],
+      "speaker": "Matt Merson",
+      "speaker_role": "Sales Professional",
+      "episode": "#215 - Ask-Me-Anything with Sales Pro Matt Merson",
+      "is_host": false,
+      "has_number": false
+    },
+    {
+      "sentence": "One is your trade spend, obviously what is your cost of goods?",
+      "categories": [
+        "trade_spend"
+      ],
+      "speaker": "Seth Goldman",
+      "speaker_role": "Guest (unclassified)",
+      "episode": "#219 - Managing People at Work with Seth Goldman of JUST Ice Tea",
+      "is_host": false,
+      "has_number": false
+    },
+    {
+      "sentence": "But if we have a trade spend number we know we need to hit and we're not hitting it.",
+      "categories": [
+        "trade_spend"
+      ],
+      "speaker": "Seth Goldman",
+      "speaker_role": "Guest (unclassified)",
+      "episode": "#219 - Managing People at Work with Seth Goldman of JUST Ice Tea",
+      "is_host": false,
+      "has_number": false
+    },
+    {
+      "sentence": "So an operations, oh, there's too much of a trade spend.",
+      "categories": [
+        "trade_spend"
+      ],
+      "speaker": "Seth Goldman",
+      "speaker_role": "Guest (unclassified)",
+      "episode": "#219 - Managing People at Work with Seth Goldman of JUST Ice Tea",
+      "is_host": false,
+      "has_number": false
+    },
+    {
+      "sentence": "And what it is it's a 2% off invoice allowance that runs through that first year.",
+      "categories": [
+        "off_invoice"
+      ],
+      "speaker": "Tim Dornfeld",
+      "speaker_role": "Distributor (KeHE VP)",
+      "episode": "#189 -  Distributor Spotlight: Tim Dornfeld, KeHE",
+      "is_host": false,
+      "has_number": true
+    },
+    {
+      "sentence": "But what it does is it opts you out of some of the KHI charges that a lot of new brands face, whether it be intro allowances when going into a DC category, into a DC MCB fees or extra performance fees on manual chargebacks or charges that are coming back from retailers, things of that nature there.",
+      "categories": [
+        "mcb"
+      ],
+      "speaker": "Tim Dornfeld",
+      "speaker_role": "Distributor (KeHE VP)",
+      "episode": "#189 -  Distributor Spotlight: Tim Dornfeld, KeHE",
+      "is_host": false,
+      "has_number": false
+    },
+    {
+      "sentence": "And let's say they're running 4 off invoice.",
+      "categories": [
+        "off_invoice"
+      ],
+      "speaker": "Daniel Scharff",
+      "speaker_role": "Host",
+      "episode": "#189 -  Distributor Spotlight: Tim Dornfeld, KeHE",
+      "is_host": true,
+      "has_number": false
+    },
+    {
+      "sentence": "But to support that there's also a 2% off invoice that allows you to have access to it.",
+      "categories": [
+        "off_invoice"
+      ],
+      "speaker": "Tim Dornfeld",
+      "speaker_role": "Distributor (KeHE VP)",
+      "episode": "#189 -  Distributor Spotlight: Tim Dornfeld, KeHE",
+      "is_host": false,
+      "has_number": true
+    },
+    {
+      "sentence": "And if your ad is strong, then you're going to get stronger performance on the off invoice that you provided, right?",
+      "categories": [
+        "off_invoice"
+      ],
+      "speaker": "Tim Dornfeld",
+      "speaker_role": "Distributor (KeHE VP)",
+      "episode": "#189 -  Distributor Spotlight: Tim Dornfeld, KeHE",
+      "is_host": false,
+      "has_number": false
+    },
+    {
+      "sentence": "And then the brand is also going to lose money from spoilage and the product not selling well and having to be on promotion, right?",
+      "categories": [
+        "spoilage"
+      ],
+      "speaker": null,
+      "speaker_role": "Buyer (probable)",
+      "episode": "#94 Buyer Series: Fostering good buyer vibes with Wade Yenny & Alex Bayer",
+      "is_host": false,
+      "has_number": false
+    },
+    {
+      "sentence": "That's the only chargeback.",
+      "categories": [
+        "chargeback"
+      ],
+      "speaker": null,
+      "speaker_role": "Buyer (probable)",
+      "episode": "#94 Buyer Series: Fostering good buyer vibes with Wade Yenny & Alex Bayer",
+      "is_host": false,
+      "has_number": false
+    },
+    {
+      "sentence": "Thankfully, Promomash, the only all in one promotion management platform and Crisp, a leading retail data platform that integrates with over 40 retailers have developed a joint solution that gives CPG brands a level of visibility and control they've never had before over their trade spend and promo performance.",
+      "categories": [
+        "trade_spend"
+      ],
+      "speaker": null,
+      "speaker_role": "Buyer (probable)",
+      "episode": "#94 Buyer Series: Fostering good buyer vibes with Wade Yenny & Alex Bayer",
+      "is_host": false,
+      "has_number": false
+    },
+    {
+      "sentence": "Whether it's a valid chargeback, whether it's an erroneous chargeback, they make billions of dollars in profit.",
+      "categories": [
+        "chargeback"
+      ],
+      "speaker": null,
+      "speaker_role": "Buyer (probable)",
+      "episode": "#94 Buyer Series: Fostering good buyer vibes with Wade Yenny & Alex Bayer",
+      "is_host": false,
+      "has_number": false
+    },
+    {
+      "sentence": "And I would highly recommend, highly, I can't recommend enough to hire a deduction specialist.",
+      "categories": [
+        "deduction"
+      ],
+      "speaker": null,
+      "speaker_role": "Buyer (probable)",
+      "episode": "#94 Buyer Series: Fostering good buyer vibes with Wade Yenny & Alex Bayer",
+      "is_host": false,
+      "has_number": false
+    },
+    {
+      "sentence": "And then if we don't sell them by x amount of time, we're just going to get either a deduction, we're going to get a bill from our retailers or distribution partners.",
+      "categories": [
+        "deduction"
+      ],
+      "speaker": "Jake Deleon",
+      "speaker_role": "Guest (unclassified)",
+      "episode": "UPC Management: Jake Deleon, Fila Manila and Alex Sorenson, Blank Slate Kitchen",
+      "is_host": false,
+      "has_number": false
+    },
+    {
+      "sentence": "I always wanted to try and price in 15 to 20% of trade spend so that we're a brand that has to be on promo.",
+      "categories": [
+        "trade_spend"
+      ],
+      "speaker": "Daniel Scharff",
+      "speaker_role": "Host",
+      "episode": "#186 - Bootstrap Heroes: Bumpin Blends, Lentiful and Drink Wholesome",
+      "is_host": true,
+      "has_number": true
+    },
+    {
+      "sentence": "Field sales, marketing rep, brand manager, shopper, marketing manager, associate director, marketing, a customer service representative, a trade spend analyst, supply chain manager.",
+      "categories": [
+        "trade_spend"
+      ],
+      "speaker": "Peggy Shell",
+      "speaker_role": "Guest (unclassified)",
+      "episode": "#135 Recruiting 101 with Peggy Shell, Creative Alignments",
+      "is_host": false,
+      "has_number": false
+    },
+    {
+      "sentence": "Not just marketing dollars in the form of trade spend where the price comes down on the shelf, you know, 16 weeks a year, but in the form of advertising in those grocery stores, doing sampling events, having shelf talkers, whatever it is, there's a million ways you need to market because it's a very competitive category.",
+      "categories": [
+        "trade_spend"
+      ],
+      "speaker": "Paul Voge",
+      "speaker_role": "Buyer",
+      "episode": "#168 - CPG Founder Life - What to Expect: Paul Voge",
+      "is_host": false,
+      "has_number": false
+    },
+    {
+      "sentence": "Where it really feels like a bigger stage is we are now constantly looking at, okay, what was our trade spend last year in this retailer?",
+      "categories": [
+        "trade_spend"
+      ],
+      "speaker": "Paul Voge",
+      "speaker_role": "Buyer",
+      "episode": "#168 - CPG Founder Life - What to Expect: Paul Voge",
+      "is_host": false,
+      "has_number": false
+    },
+    {
+      "sentence": "So it does become in some ways a game of interest because you're looking at a little point of trade spend here and there.",
+      "categories": [
+        "trade_spend"
+      ],
+      "speaker": "Paul Voge",
+      "speaker_role": "Buyer",
+      "episode": "#168 - CPG Founder Life - What to Expect: Paul Voge",
+      "is_host": false,
+      "has_number": false
+    },
+    {
+      "sentence": "And so we want to make sure that your trade that we're respecting what trade spend you do have, if you do have any and if you're not there yet, we understand that we're not going to force a brand into doing it.",
+      "categories": [
+        "trade_spend"
+      ],
+      "speaker": "Karen Slusher",
+      "speaker_role": "Distributor Expert",
+      "episode": "#184 -Distributor Spotlight: Karen Slusher of Azure Standard",
+      "is_host": false,
+      "has_number": false
+    },
+    {
+      "sentence": "You know what's cool is we're developing more trade spend opportunities over this year.",
+      "categories": [
+        "trade_spend"
+      ],
+      "speaker": "Karen Slusher",
+      "speaker_role": "Distributor Expert",
+      "episode": "#184 -Distributor Spotlight: Karen Slusher of Azure Standard",
+      "is_host": false,
+      "has_number": false
+    },
+    {
+      "sentence": "We're not just going to come back to you and give you an MCB and go, oh, by the way, we're charging you back for something that you didn't even know.",
+      "categories": [
+        "mcb"
+      ],
+      "speaker": "Karen Slusher",
+      "speaker_role": "Distributor Expert",
+      "episode": "#184 -Distributor Spotlight: Karen Slusher of Azure Standard",
+      "is_host": false,
+      "has_number": false
+    },
+    {
+      "sentence": "And there'll be a lot of spoilage when we do that.",
+      "categories": [
+        "spoilage"
+      ],
+      "speaker": "Gabrielle McGonagale",
+      "speaker_role": "Legal/Compliance",
+      "episode": "#238 - Legal Ask-Me-Anything with Giannuzzi Lewendon",
+      "is_host": false,
+      "has_number": false
+    },
+    {
+      "sentence": "The gross margin is going to come after you deduct all of the trade spend and deductions minus the cogs.",
+      "categories": [
+        "trade_spend"
+      ],
+      "speaker": "Daniel Sharff",
+      "speaker_role": "Host",
+      "episode": "#237 - Inside Founders & Funders with Alex Michaelsen from Leisure Hydration and Alex Malamatinas from Melitas Ventures",
+      "is_host": true,
+      "has_number": false
+    },
+    {
+      "sentence": "You maybe haven't even received the deduction yet from UNIFI or KHI to know what that is.",
+      "categories": [
+        "deduction"
+      ],
+      "speaker": "Daniel Sharff",
+      "speaker_role": "Host",
+      "episode": "#237 - Inside Founders & Funders with Alex Michaelsen from Leisure Hydration and Alex Malamatinas from Melitas Ventures",
+      "is_host": true,
+      "has_number": false
+    },
+    {
+      "sentence": "Definitely mitigate any spoilage from that standpoint.",
+      "categories": [
+        "spoilage"
+      ],
+      "speaker": "Daniel Scharff",
+      "speaker_role": "Host",
+      "episode": "#132 Buyer Spotlight: Chris Battaglia, Protein Category Sr Manager, Hungryroot",
+      "is_host": true,
+      "has_number": false
+    },
+    {
+      "sentence": "And then when you do that, you're really looking at your trade spend and our pack size and the bag size and pricing on the shelf.",
+      "categories": [
+        "trade_spend"
+      ],
+      "speaker": "Caitlin Bricker",
+      "speaker_role": "Host",
+      "episode": "Founder Feature: Amie Kesler of Carolyn's Krisps",
+      "is_host": true,
+      "has_number": false
+    },
+    {
+      "sentence": "Like the spoilage doesn't really happen that way because they're just taking possession of the whole lot of the stuff as soon as it.",
+      "categories": [
+        "spoilage"
+      ],
+      "speaker": "Daniel Scharff",
+      "speaker_role": "Host",
+      "episode": "#253 - Private Label Arrangements: What CPG Brands Should Know Before Signing the Deal | Hillary Hughes, Foster Garvey",
+      "is_host": true,
+      "has_number": false
+    },
+    {
+      "sentence": "We're investing more in trade spending in shippers.",
+      "categories": [
+        "trade_spend"
+      ],
+      "speaker": "Alex Borschow",
+      "speaker_role": "Investor (probable)",
+      "episode": "Investor Spotlight: Alex Borschow, Rocana Ventures",
+      "is_host": false,
+      "has_number": false
+    },
+    {
+      "sentence": "Yeah, we had a lot of folks like that, folks who are experts in sales or marketing or trade spend or, you know, finding distribution just to give people.",
+      "categories": [
+        "trade_spend"
+      ],
+      "speaker": "Leana",
+      "speaker_role": "Guest (unclassified)",
+      "episode": "#235 - Winter FancyFaire* Recap with Leana Salamah from SFA, John Lane from Raley's, and Marc Brown from ONOIN",
+      "is_host": false,
+      "has_number": false
+    },
+    {
+      "sentence": "So when you're looking at being taxed on this asset that you have, and this asset has value because you own a piece of a company, when you're looking at that value of the company and what your percentage means with respect to your take home value and your income in connection with that equity, that's where the deduction comes into play.",
+      "categories": [
+        "deduction"
+      ],
+      "speaker": "Daniel Scharff",
+      "speaker_role": "Host",
+      "episode": "#196 - Corporate Structure & Financing 101 with Giannuzzi Lewendon",
+      "is_host": true,
+      "has_number": false
+    },
+    {
+      "sentence": "Thankfully, PromoMash, the only all-in-one promotion management platform, and Crisp, a leading retail data platform that integrates with over 40 retailers, have developed a joint solution that gives CPG brands a level of visibility and control they've never had before over their trade spend and promo performance.",
+      "categories": [
+        "trade_spend"
+      ],
+      "speaker": null,
+      "speaker_role": "Guest (unclassified)",
+      "episode": "#93 Creating a More Equitable & Transparent Food System with Amazi",
+      "is_host": false,
+      "has_number": false
+    },
+    {
+      "sentence": "So the higher the number, the closer to one it is, the more likely you are to have growth of not just spoilage organisms, but pathogens, things that can make people sick and possibly kill children and grandparents.",
+      "categories": [
+        "spoilage"
+      ],
+      "speaker": "Jamie Valenti-Jordan",
+      "speaker_role": "R&D/Formulation (probable)",
+      "episode": "R&D Radio: Commercialization, Pilot Runs, and Scaling Food Products the Right Way with Jamie Valenti-Jordan",
+      "is_host": false,
+      "has_number": false
+    },
+    {
+      "sentence": "So the higher the number, the closer to one it is, the more likely you are to have growth of not just spoilage organisms, but pathogens, things that can make people sick and possibly kill children and grandparents.",
+      "categories": [
+        "spoilage"
+      ],
+      "speaker": "Jamie Valenti-Jordan",
+      "speaker_role": "R&D/Formulation (probable)",
+      "episode": "R&D Radio: Commercialization, Pilot Runs, and Scaling Food Products the Right Way with Jamie Valenti-Jordan",
+      "is_host": false,
+      "has_number": false
+    },
+    {
+      "sentence": "Chargeback from UNFI for $15,000 at Christmas time, another Merry Christmas.",
+      "categories": [
+        "chargeback"
+      ],
+      "speaker": "Vanessa White",
+      "speaker_role": "Founder",
+      "episode": "#136: Growing Jaju Pierogi with Social Media Pro Vanessa White",
+      "is_host": false,
+      "has_number": true
+    },
+    {
+      "sentence": "Like an erroneous slotting fee that wasn't meant to happen.",
+      "categories": [
+        "slotting"
+      ],
+      "speaker": "Vanessa White",
+      "speaker_role": "Founder",
+      "episode": "#136: Growing Jaju Pierogi with Social Media Pro Vanessa White",
+      "is_host": false,
+      "has_number": false
+    },
+    {
+      "sentence": "The only thing I ever said no to when I was offered more responsibility is when somebody was like, yeah, do you want to manage the accountants who do the trade promotion stuff?",
+      "categories": [
+        "trade_spend"
+      ],
+      "speaker": "Daniel Scharff",
+      "speaker_role": "Host",
+      "episode": "#167 - 5 Financial Factors That Make or Break E-commerce Brands with Paul Bianco",
+      "is_host": true,
+      "has_number": false
+    },
+    {
+      "sentence": "So again starting with people but then going into the trade spend D2C and then obviously promotional pricing is big.",
+      "categories": [
+        "trade_spend"
+      ],
+      "speaker": "BJ McCaslin",
+      "speaker_role": "Founder (probable)",
+      "episode": "Founder Feature: BJ McCaslin of Holy! Water",
+      "is_host": false,
+      "has_number": false
+    },
+    {
+      "sentence": "But, like you said, you have to make sure that stays within, you know, your trade spend guidelines.",
+      "categories": [
+        "trade_spend"
+      ],
+      "speaker": "Daniel Scharff",
+      "speaker_role": "Host",
+      "episode": "#145 Distributor Trade Shows with Samuel Jacobson, HOP WTR",
+      "is_host": true,
+      "has_number": false
+    },
+    {
+      "sentence": "But when you're talking about something like an off invoice, like if you're talking about 20, 30%, that's not off, like the price that you sell your case to Kahi or Unifi, it's actually calculated off the price that they're like selling, which includes their margin.",
+      "categories": [
+        "off_invoice"
+      ],
+      "speaker": "Daniel Scharff",
+      "speaker_role": "Host",
+      "episode": "#145 Distributor Trade Shows with Samuel Jacobson, HOP WTR",
+      "is_host": true,
+      "has_number": true
+    },
+    {
+      "sentence": "Because you might have an off invoice period with them scheduled.",
+      "categories": [
+        "off_invoice"
+      ],
+      "speaker": "Daniel Scharff",
+      "speaker_role": "Host",
+      "episode": "#145 Distributor Trade Shows with Samuel Jacobson, HOP WTR",
+      "is_host": true,
+      "has_number": false
+    },
+    {
+      "sentence": "And by the way October is when I have that 15% off invoice.",
+      "categories": [
+        "off_invoice"
+      ],
+      "speaker": "Daniel Scharff",
+      "speaker_role": "Host",
+      "episode": "#145 Distributor Trade Shows with Samuel Jacobson, HOP WTR",
+      "is_host": true,
+      "has_number": true
+    },
+    {
+      "sentence": "So if you do a deal on the iPad for 30% and you have an off invoice running in July for 15, they're going to take account of the off invoice and give it a total of 30.",
+      "categories": [
+        "off_invoice"
+      ],
+      "speaker": "Daniel Scharff",
+      "speaker_role": "Host",
+      "episode": "#145 Distributor Trade Shows with Samuel Jacobson, HOP WTR",
+      "is_host": true,
+      "has_number": true
+    },
+    {
+      "sentence": "But if you submit a turnover and submit 30% and you have an off invoice going, it could actually double that. so yeah, it's definitely something to be careful about.",
+      "categories": [
+        "off_invoice"
+      ],
+      "speaker": "Daniel Scharff",
+      "speaker_role": "Host",
+      "episode": "#145 Distributor Trade Shows with Samuel Jacobson, HOP WTR",
+      "is_host": true,
+      "has_number": true
+    },
+    {
+      "sentence": "And I would, I would recommend, you know, when I just with the terms of invoice and manufacturer chargeback, MCB, you know, there's a few you know, you just do some googling, there's some documents that will give you a rundown and you can get a grounding because it's very confusing the whole system at first. we generally have like four off invoices a year, and then we'll layer deals on top of that.",
+      "categories": [
+        "chargeback",
+        "mcb"
+      ],
+      "speaker": "Daniel Scharff",
+      "speaker_role": "Host",
+      "episode": "#145 Distributor Trade Shows with Samuel Jacobson, HOP WTR",
+      "is_host": true,
+      "has_number": false
+    },
+    {
+      "sentence": "One note I wanted to make is with Kagi. it's slightly different than you and I and that, you know, your off invoice periods will be taken as sort of, you know, fraud deals available to any customer during this ship window if you have those loaded in.",
+      "categories": [
+        "off_invoice"
+      ],
+      "speaker": "Daniel Scharff",
+      "speaker_role": "Host",
+      "episode": "#145 Distributor Trade Shows with Samuel Jacobson, HOP WTR",
+      "is_host": true,
+      "has_number": false
+    },
+    {
+      "sentence": "So if you want a deal available to all customers, you kind of have to load an off invoice with the exception of show only deals, through Kagi, which I think is another invite program.",
+      "categories": [
+        "off_invoice"
+      ],
+      "speaker": "Samuel Jacobson",
+      "speaker_role": "Guest (unclassified)",
+      "episode": "#145 Distributor Trade Shows with Samuel Jacobson, HOP WTR",
+      "is_host": false,
+      "has_number": false
+    },
+    {
+      "sentence": "Danielle - Yeah so inventory insurance this is something that comes up a lot in my conversations with founders and it can feel very complicated you know supply chains are inherently have a lot of moving parts knowing how your ingredients and your inventory your finished goods are all insured and where and by whom and to what value takes a little bit of digging in to your particular risk so firstly i've said it before during our last discussion and i will say it again startups don't need everything right away there are different points at which brands should consider various insurance policies general liability is the most important piece of the puzzle to get right away that covers third party claims of bodily injury most distributors and retailers as we've said are going to require this of you so that really does literally open doors however you know i think it's important to think about your inventory and how or if it is insured this is a confusing area for a lot of my clients i typically spend a fair amount of time going through this as i start working with folks so i'll start with just defining it so inventory insurance can be called a few different things ultimately it is a property policy of some sort you can ensure inventory in a variety of ways and there are more robust or more skim ways of doing that so you can ensure your inventory on a standard property policy a cargo policy or what is called stock throughput which is basically a combination of the two a stock throughput policy is one that has two coverage parts cargo or property in transit and location coverage for property sitting still at various locations such as 3PL or co-mans the beauty of this policy there are many beauties of this policy but one of them is that it ensures your goods at any point in the supply chain and it eliminates the gaps in coverage that exist at particularly loading and unloading because that's where a lot of claims happen what we don't want is multiple insurance companies multiple parties being involved and pointing fingers in the event of a claim so for instance one insurer says well we were at the warehouse the truck wasn't moving it's not our policy another insurer says well it was on the truck so it's not our policy you can see how that can get pretty messy and frustrating the stock throughput policy is designed to ensure your property from a to z right and if there has been direct physical loss or damage to the property so think storage containers or pallets crushing other pallets or storage containers perhaps infestation that depends on the policy spoilage if there's a failure of refrigeration of fire at a warehouse or on a truck which we've seen or maybe theft so there are a number of ways that this policy is or can be very robust particularly compared to the other option which is a standard property policy which i'll get to in a moment but spoilage is one thing to think about do you have a shelf stable product do you have ingredients that are subject to spoilage if temperature what we look at when evaluating a brand specific needs is what happens to each of the ingredients or finished product while it's subject to different temperatures so for example a former client of mine had a finished product that was shelf stable but they had it was a canned beverage with real fruit juice in it the fruit juice the raw materials that went into the finished product was not shelf stable so we needed to add spoilage coverage for the incoming shipments of the raw materials to the co-man even though their finished product was shelf stable so we want the policy to cover you know those losses another piece of the robust nature of this type of policy is the valuation this is where i would say property policies very much differ from stock throughput policies valuation of your product so most property policies ensure property at replacement cost and i've even seen some that are at actual cash value which is not good for most brands it's advantageous to ensure your finished goods at selling price stock throughput policies take the selling price into consideration and you have a choice to ensure at selling price or at invoice cost or at replacement cost but it gives you some control over what you want to buy what matters to you how do you want to be reimbursed if you do have a loss another thing to think about is catastrophe losses or cat losses as we call them things like flood earthquake wind property policies exclude cat losses like flood and earthquake you have to buy those separately stock throughput policies can include these causes of loss and they often carry higher deductibles and there are regionally maybe some limitations but it's designed to be a much more comprehensive policy in that way.",
+      "categories": [
+        "spoilage"
+      ],
+      "speaker": null,
+      "speaker_role": "Legal/Compliance",
+      "episode": "#102 Beyond the Certificate: How to Navigate Insurance Related to Fundraising and Inventory with Amelia Risk",
+      "is_host": false,
+      "has_number": false
+    },
+    {
+      "sentence": "Jessi - This makes me think about transit to distributors as well and I'm curious if you know or have run into for example if a big distributor is coming and picking up at your facility and you've documented what you loaded on your truck and then you get a charge back that says hey we didn't receive a whole pallet does this kind of insurance help in those kind of instances as well or is that kind of a separate thing that you handle with your distributor?",
+      "categories": [
+        "chargeback"
+      ],
+      "speaker": null,
+      "speaker_role": "Legal/Compliance",
+      "episode": "#102 Beyond the Certificate: How to Navigate Insurance Related to Fundraising and Inventory with Amelia Risk",
+      "is_host": false,
+      "has_number": false
+    },
+    {
+      "sentence": "Danielle - Yeah i do um we've seen a number of claims or concerns from our clients over the past few years with regard to inventory it's one of the more frequent conversations that we have i think you know especially with the pandemic the supply chains were just a total mess um i think a lot of people were feeling that so one of our clients had three claims in a roughly six month period of time none of which were their fault and the issues were largely in transit and at ports so they had crushed containers that was mostly it there was one that was infestation they did have stock throughput policy and they were fully reimbursed up to the limit of the policy for that so while claims are never fun this one was a good outcome because the losses were fully insured we've had a number of clients that have had leaking cans this is probably half a dozen folks have come to me about this that one is tricky because it really depends on what happened well all property losses depend on what's happened but sometimes this is an issue with the can not being an appropriate fit for the beverage that's inside of it um what we look for and that's really not my expertise but what we look for is has there been direct physical loss or damage to the product if not then that sounds like a manufacturing issue and something that needs to be rectified and troubleshoot there but if there has been direct physical loss to the product then that would potentially be an insured loss another thing that typically comes up or has come up with a few folks is product that tastes off or the texture is off something isn't quite right with how it tastes and i've had questions from folks around spoilage that scenario is not an insured loss that scenario is likely a manufacturing issue as well so product that just doesn't taste quite right or it doesn't come out the way that you wanted it to that is not insurable under this type of policy that is something that needs to be dealt with with the manufacturer again there has to be direct physical loss to it and the spoilage coverage more often than not but again you have to really read into the policy that you're considering is coverage when your product spoils because there was a mechanical failure of some sort of temperature control so again if you have shelf stable ingredients and shelf stable products then spoilage would really not apply here so there are you know a number of things that we see clients struggling with some are insurable some are not insurable it depends on what the situation is and there are a number of ways to ensure your property some are really good some are not so great ways not everyone needs a stock throughput policy right out of the gates many don't there are some advantages to adding property to your existing general liability policy if that is available there is sometimes some transit coverage that can be thrown in on property policies i wouldn't say that they are extremely robust options but not everybody needs this level right away but i would say that knowing the landscape of options available to you and knowing the limitations of certain types of policies is really important and understanding what's available to you how your needs are going to change over time is also important and so that you can make a decision that you're comfortable with and that you made because you knew all the information that was relevant to you.",
+      "categories": [
+        "spoilage"
+      ],
+      "speaker": null,
+      "speaker_role": "Legal/Compliance",
+      "episode": "#102 Beyond the Certificate: How to Navigate Insurance Related to Fundraising and Inventory with Amelia Risk",
+      "is_host": false,
+      "has_number": false
+    },
+    {
+      "sentence": "Danielle - Yeah this is coming up a lot and i think we're in a moment where if from an you know the insurance industry is addressing this what i'll say is spoilage coverage has to be specifically underwritten so the underwriters look at on on this type of policy anyway you don't want to stock throughput policy the underwriter will ask questions about your product they will ask questions about the transportation so you have to show that you are caring for the product from a temperature control perspective what wouldn't be possible is having a shelf stable product that you don't control the temperature for right because it's shelf stable and you don't maybe use reefer trucks and then getting the spoilage coverage the the underwriters are not going to ensure that what they want to see when they're offering coverage for something like spoilage is that you're doing what you can to mitigate spoilage from happening in the first place so that that piece has to be there so i'd say that for folks who have a product that's shelf stable and doesn't you know in your in someone's home required to be refrigerated but they are worried about their product being damaged some way from extreme heat while in transit you may want to look into getting a refrigeration truck and you know i understand that there's a cost associated with that but again from an insurance perspective the underwriters would need to see that you're doing that in order to offer insurance for it.",
+      "categories": [
+        "spoilage"
+      ],
+      "speaker": null,
+      "speaker_role": "Legal/Compliance",
+      "episode": "#102 Beyond the Certificate: How to Navigate Insurance Related to Fundraising and Inventory with Amelia Risk",
+      "is_host": false,
+      "has_number": false
+    },
+    {
+      "sentence": "But I've seen enough P Ls to know approximately how much people are giving to the marketing line item, not counting trade spend.",
+      "categories": [
+        "trade_spend"
+      ],
+      "speaker": "Janice Greenwald",
+      "speaker_role": "Marketing Expert",
+      "episode": "#233 - Ask-Me-Anything: Marketing with Janice Greenwald",
+      "is_host": false,
+      "has_number": false
+    },
+    {
+      "sentence": "And there will also be a very significant slotting charge for that fee if you get national distribution, call it 2200 stores plus, in every Kroger division, roughly $150,000 slotting.",
+      "categories": [
+        "slotting"
+      ],
+      "speaker": "Daniel Scharf",
+      "speaker_role": "Host",
+      "episode": "How to Win At Kroger",
+      "is_host": true,
+      "has_number": true
+    },
+    {
+      "sentence": "I remember one time working with a broker, I think, you know, one thing were very happy that we managed to do was at least change that commission number like the 5% from gross sales to net sales so that we're deducting all of the big slotting fees and the promos before we're paying a percentage on that.",
+      "categories": [
+        "deduction"
+      ],
+      "speaker": "Matt Merson",
+      "speaker_role": "Sales Professional",
+      "episode": "#205 - CPG Brokers 101 with Matt Merson",
+      "is_host": false,
+      "has_number": true
+    },
+    {
+      "sentence": "What you have to be cognizant about here is you do have TPRs, you do have MCB's, you do have scans, you do have slotting fees.",
+      "categories": [
+        "mcb"
+      ],
+      "speaker": "Matt Merson",
+      "speaker_role": "Sales Professional",
+      "episode": "#205 - CPG Brokers 101 with Matt Merson",
+      "is_host": false,
+      "has_number": false
+    },
+    {
+      "sentence": "So if you have a 15% OI month or you run a special buy get deal, anything that reduces the price is a net revenue to the company and then you should be paying your brokerage off of net revenue.",
+      "categories": [
+        "off_invoice"
+      ],
+      "speaker": "Matt Merson",
+      "speaker_role": "Sales Professional",
+      "episode": "#205 - CPG Brokers 101 with Matt Merson",
+      "is_host": false,
+      "has_number": true
+    },
+    {
+      "sentence": "So whether that's buy two cases at full revenue and get two free or if you want to MCB me back 50% for each case, I'll cover free fill for d stores at 50%, c stores at 25%.",
+      "categories": [
+        "mcb"
+      ],
+      "speaker": "Matt Merson",
+      "speaker_role": "Sales Professional",
+      "episode": "#205 - CPG Brokers 101 with Matt Merson",
+      "is_host": false,
+      "has_number": true
+    },
+    {
+      "sentence": "You have to have the correct email on file which your supplier manager can help you with and you will receive backup for each deduction is taken.",
+      "categories": [
+        "deduction"
+      ],
+      "speaker": "Aaron May",
+      "speaker_role": "Distributor (UNFI)",
+      "episode": "#164- UNFI UpNext Program: Aaron May",
+      "is_host": false,
+      "has_number": false
+    },
+    {
+      "sentence": "But probably the biggest thing is the trade spend, staying on top of that.",
+      "categories": [
+        "trade_spend"
+      ],
+      "speaker": "Isabel Washington",
+      "speaker_role": "Founder (probable)",
+      "episode": "#252 - The Rise of Laurel's Coffee: Whole Foods, Wegmans & 1,800 Target Stores in Two Years",
+      "is_host": false,
+      "has_number": false
+    },
+    {
+      "sentence": "And her understanding, both of their understanding of trade spending and the stuff that we should be spending on, should we be spending 20%, should we be spending 40%?",
+      "categories": [
+        "trade_spend"
+      ],
+      "speaker": "Brian Bethke",
+      "speaker_role": "Founder (probable)",
+      "episode": "Founder Feature: Brian Bethke of BEAR Maple Farms",
+      "is_host": false,
+      "has_number": true
+    },
+    {
+      "sentence": "There's such a huge range and me coming from the music industry, if I go and have those conversations myself, they're going to sell me on like 40% trade spend and I'm not going to know what the baseline is.",
+      "categories": [
+        "trade_spend"
+      ],
+      "speaker": "Brian Bethke",
+      "speaker_role": "Founder (probable)",
+      "episode": "Founder Feature: Brian Bethke of BEAR Maple Farms",
+      "is_host": false,
+      "has_number": true
+    },
+    {
+      "sentence": "And again it kind of just comes back to kind of even if you don't have someone technically on your team as you do, maybe even just sending someone a slack on startup CPG or asking those questions of like what is normal for trade spend and what should I expect when I'm going into this conversation with a retailer?",
+      "categories": [
+        "trade_spend"
+      ],
+      "speaker": "Grace Kennedy",
+      "speaker_role": "Host",
+      "episode": "Founder Feature: Brian Bethke of BEAR Maple Farms",
+      "is_host": true,
+      "has_number": false
+    },
+    {
+      "sentence": "What's the chargeback?",
+      "categories": [
+        "chargeback"
+      ],
+      "speaker": "Ehime Eigbe-Akindele",
+      "speaker_role": "Founder (probable)",
+      "episode": "Founder Feature: Ehime Eigbe-Akindele of Sweet Kiwi",
+      "is_host": false,
+      "has_number": false
+    },
+    {
+      "sentence": "Like, sure, we'll pay a slotting fee and sure, we'll do this.",
+      "categories": [
+        "slotting"
+      ],
+      "speaker": "Lucy Dana",
+      "speaker_role": "Guest (unclassified)",
+      "episode": "Founders Feature: Lucy Dana of One Trick Pony",
+      "is_host": false,
+      "has_number": false
+    },
+    {
+      "sentence": "Okay, on that vein, because you have to do a lot of times these off invoice things with the distributors, right, where you have like four periods a year, it can be expensive.",
+      "categories": [
+        "off_invoice"
+      ],
+      "speaker": "Matt Merson",
+      "speaker_role": "Sales Professional",
+      "episode": "#193 - How to Drive Velocity with Matt Merson",
+      "is_host": false,
+      "has_number": false
+    },
+    {
+      "sentence": "And then you need to also plan the promotion with the retailer to make sure that they actually pass that off invoice, which is intended to create lower prices at the retailers for consumers.",
+      "categories": [
+        "off_invoice"
+      ],
+      "speaker": "Matt Merson",
+      "speaker_role": "Sales Professional",
+      "episode": "#193 - How to Drive Velocity with Matt Merson",
+      "is_host": false,
+      "has_number": false
+    },
+    {
+      "sentence": "Any tips that you have on making sure that off invoice money actually leads to those price promotions so that you get more velocity.",
+      "categories": [
+        "off_invoice"
+      ],
+      "speaker": "Matt Merson",
+      "speaker_role": "Sales Professional",
+      "episode": "#193 - How to Drive Velocity with Matt Merson",
+      "is_host": false,
+      "has_number": false
+    },
+    {
+      "sentence": "Because these distributors, they'll take not only the four weeks of promotion on OI, but they take two weeks before and two weeks after, and it's 100% of the loads that are going into the distributor.",
+      "categories": [
+        "off_invoice"
+      ],
+      "speaker": "Matt Merson",
+      "speaker_role": "Sales Professional",
+      "episode": "#193 - How to Drive Velocity with Matt Merson",
+      "is_host": false,
+      "has_number": true
+    },
+    {
+      "sentence": "So now you have eight weeks of OI 2, 4 2.",
+      "categories": [
+        "off_invoice"
+      ],
+      "speaker": "Matt Merson",
+      "speaker_role": "Sales Professional",
+      "episode": "#193 - How to Drive Velocity with Matt Merson",
+      "is_host": false,
+      "has_number": false
+    },
+    {
+      "sentence": "Now, if you're a shelf stable brand, why not buy up heavy and load in on the weeks that the distributor is getting? 10, 15% OI.",
+      "categories": [
+        "off_invoice"
+      ],
+      "speaker": "Matt Merson",
+      "speaker_role": "Sales Professional",
+      "episode": "#193 - How to Drive Velocity with Matt Merson",
+      "is_host": false,
+      "has_number": true
+    },
+    {
+      "sentence": "Industry standard metrics like velocities and profitability, spoilage, things like that.",
+      "categories": [
+        "spoilage"
+      ],
+      "speaker": "Carrie",
+      "speaker_role": "Guest (unclassified)",
+      "episode": "#226 - Hungryroot 101: Launch Your Brand & Master Smart Cart Shopping",
+      "is_host": false,
+      "has_number": false
+    }
+  ],
+  "episode_density": [
+    [
+      "#145 Distributor Trade Shows with Samuel Jacobson, HOP WTR",
+      9
+    ],
+    [
+      "#193 - How to Drive Velocity with Matt Merson",
+      6
+    ],
+    [
+      "#189 -  Distributor Spotlight: Tim Dornfeld, KeHE",
+      5
+    ],
+    [
+      "#94 Buyer Series: Fostering good buyer vibes with Wade Yenny & Alex Bayer",
+      5
+    ],
+    [
+      "#102 Beyond the Certificate: How to Navigate Insurance Related to Fundraising and Inventory with Amelia Risk",
+      4
+    ],
+    [
+      "#205 - CPG Brokers 101 with Matt Merson",
+      4
+    ],
+    [
+      "#219 - Managing People at Work with Seth Goldman of JUST Ice Tea",
+      3
+    ],
+    [
+      "#168 - CPG Founder Life - What to Expect: Paul Voge",
+      3
+    ],
+    [
+      "#184 -Distributor Spotlight: Karen Slusher of Azure Standard",
+      3
+    ],
+    [
+      "Founder Feature: Brian Bethke of BEAR Maple Farms",
+      3
+    ],
+    [
+      "#121 How to Launch in Foodservice with Sales Pro Jenna Cameron Part 1",
+      2
+    ],
+    [
+      "#215 - Ask-Me-Anything with Sales Pro Matt Merson",
+      2
+    ],
+    [
+      "#237 - Inside Founders & Funders with Alex Michaelsen from Leisure Hydration and Alex Malamatinas from Melitas Ventures",
+      2
+    ],
+    [
+      "R&D Radio: Commercialization, Pilot Runs, and Scaling Food Products the Right Way with Jamie Valenti-Jordan",
+      2
+    ],
+    [
+      "#136: Growing Jaju Pierogi with Social Media Pro Vanessa White",
+      2
+    ],
+    [
+      "#169 - \"How to Take Advice\" with Nikhil Arora",
+      1
+    ],
+    [
+      "#123 Jeff Church's Lessons on Entrepreneurship, from Suja Juice $140 Million/year Success to Shutting down Rowdy Energy",
+      1
+    ],
+    [
+      "#109 The Third Annual Shelfies Awards Ceremony Live!",
+      1
+    ],
+    [
+      "#199 - How to Drive Velocity with Marketing with Janice Greenwald",
+      1
+    ],
+    [
+      "UPC Management: Jake Deleon, Fila Manila and Alex Sorenson, Blank Slate Kitchen",
+      1
+    ],
+    [
+      "#186 - Bootstrap Heroes: Bumpin Blends, Lentiful and Drink Wholesome",
+      1
+    ],
+    [
+      "#135 Recruiting 101 with Peggy Shell, Creative Alignments",
+      1
+    ],
+    [
+      "#238 - Legal Ask-Me-Anything with Giannuzzi Lewendon",
+      1
+    ],
+    [
+      "#132 Buyer Spotlight: Chris Battaglia, Protein Category Sr Manager, Hungryroot",
+      1
+    ],
+    [
+      "Founder Feature: Amie Kesler of Carolyn's Krisps",
+      1
+    ]
+  ]
+}
