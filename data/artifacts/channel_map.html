@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EasyOps — GTM Channel & Pipeline Map</title>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<style>
+  :root{
+    --bg:#f6f7f9; --card:#ffffff; --ink:#1a2130; --muted:#5b6472; --dim:#8a93a3;
+    --line:#e2e6ec; --line2:#cfd5df;
+    --out:#3b6ef5;   /* outbound  */
+    --in:#12a97a;    /* inbound   */
+    --partner:#8b5cf6;/* partner  */
+    --event:#e2761b; /* events    */
+    --paid:#d6336c;  /* paid      */
+    --crm:#0f9d8f;   /* pipeline  */
+    --nurture:#a15ac9;
+    --live:#12a97a; --building:#e0a415; --proposed:#8a93a3;
+    --shadow:0 1px 2px rgba(16,24,40,.06),0 1px 3px rgba(16,24,40,.10);
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.45;-webkit-font-smoothing:antialiased;font-size:14px}
+  a{color:var(--out);text-decoration:none}
+  .wrap{max-width:1400px;margin:0 auto;padding:26px 22px 90px}
+  header{border-bottom:1px solid var(--line);padding-bottom:16px;margin-bottom:18px}
+  h1{font-size:22px;margin:0 0 4px;letter-spacing:-.02em}
+  .sub{color:var(--muted);font-size:13px;max-width:900px}
+  .nav{display:flex;gap:8px;margin:14px 0 2px;flex-wrap:wrap}
+  .nav a,.tab{font-size:12.5px;padding:6px 12px;border:1px solid var(--line2);border-radius:20px;
+    background:var(--card);color:var(--muted);cursor:pointer;user-select:none}
+  .tab.active{background:var(--ink);color:#fff;border-color:var(--ink)}
+  .legend{display:flex;flex-wrap:wrap;gap:14px;margin-top:12px;font-size:11.5px;color:var(--muted);align-items:center}
+  .legend b{color:var(--ink);font-weight:600}
+  .chip{display:inline-flex;align-items:center;gap:6px}
+  .sw{width:11px;height:11px;border-radius:3px;display:inline-block}
+  .pill{font-size:9.5px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;
+    padding:2px 7px;border-radius:10px;color:#fff;white-space:nowrap}
+  .pill.live{background:var(--live)} .pill.building{background:var(--building)} .pill.proposed{background:var(--proposed)}
+
+  /* ---------- CHANNEL MAP ---------- */
+  .board{display:grid;grid-template-columns:1.35fr 34px .9fr 34px 1.25fr 34px .75fr;gap:0;align-items:start;margin-top:8px}
+  @media(max-width:1080px){.board{grid-template-columns:1fr;gap:10px}.arrow{display:none}}
+  .col > .h{font-size:10.5px;text-transform:uppercase;letter-spacing:.12em;color:var(--dim);font-weight:700;margin:0 0 10px;text-align:center}
+  .grouplabel{font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin:12px 2px 6px;padding-left:8px;border-left:3px solid}
+  .card{background:var(--card);border:1px solid var(--line);border-left-width:4px;border-radius:9px;
+    padding:9px 11px;margin-bottom:8px;box-shadow:var(--shadow);cursor:pointer;transition:.12s}
+  .card:hover{border-color:var(--line2);transform:translateY(-1px);box-shadow:0 4px 12px rgba(16,24,40,.10)}
+  .card .top{display:flex;justify-content:space-between;align-items:center;gap:8px}
+  .card .nm{font-weight:650;font-size:13px}
+  .card .tl{color:var(--muted);font-size:11.5px;margin-top:3px}
+  .card .steps{margin-top:7px;display:flex;flex-wrap:wrap;gap:4px}
+  .step{font-size:10px;background:#f1f3f7;border:1px solid var(--line);border-radius:5px;padding:1px 6px;color:var(--muted)}
+  .arrow{display:flex;align-items:center;justify-content:center;color:var(--line2);font-size:20px;padding-top:120px}
+  .hub{background:var(--card);border:2px dashed var(--in);border-radius:11px;padding:12px;box-shadow:var(--shadow)}
+  .hub h4{margin:0 0 4px;font-size:13px}
+  .hub p{margin:0 0 8px;font-size:11.5px;color:var(--muted)}
+  .gate{background:#f0fbf7;border:1px solid #bfe9da;border-radius:8px;padding:8px;font-size:11px;color:#0c6b53;margin-top:8px}
+  .stage{background:var(--card);border:1px solid var(--line);border-radius:9px;padding:9px 11px;margin-bottom:8px;
+    box-shadow:var(--shadow);cursor:pointer;border-left:4px solid var(--crm);transition:.12s}
+  .stage:hover{transform:translateY(-1px);box-shadow:0 4px 12px rgba(16,24,40,.10)}
+  .stage .nm{font-weight:650;font-size:12.5px;display:flex;justify-content:space-between;gap:6px;align-items:center}
+  .stage .mini{font-size:10.5px;color:var(--muted);margin-top:3px}
+  .badge{font-size:9px;font-weight:700;padding:1px 6px;border-radius:9px;background:#eef7f5;color:#0f9d8f;border:1px solid #bfe9da}
+  .badge.plan{background:#f2f2f5;color:#8a93a3;border-color:#e0e2e8}
+  .outcome{background:var(--card);border:1px solid var(--line);border-radius:9px;padding:9px 11px;margin-bottom:8px;box-shadow:var(--shadow);border-left:4px solid}
+  .nurtureRail{margin-top:16px;background:linear-gradient(90deg,#faf6fd,#fdf9ff);border:1px solid #ecdcf6;border-radius:11px;padding:12px 14px}
+  .nurtureRail h4{margin:0 0 8px;font-size:12.5px;color:var(--nurture)}
+  .ntracks{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+  @media(max-width:900px){.ntracks{grid-template-columns:1fr}}
+  .ntrack{background:#fff;border:1px solid #ecdcf6;border-radius:8px;padding:9px 11px}
+  .ntrack .nm{font-weight:650;font-size:12px;color:var(--nurture)}
+  .ntrack .d{font-size:11px;color:var(--muted);margin-top:3px}
+  .ntrack .re{font-size:10.5px;color:#7a3fb0;margin-top:6px;background:#f7edfc;border-radius:5px;padding:3px 6px}
+
+  /* ---------- DRAWER ---------- */
+  #scrim{position:fixed;inset:0;background:rgba(16,24,40,.28);opacity:0;pointer-events:none;transition:.15s;z-index:40}
+  #scrim.on{opacity:1;pointer-events:auto}
+  #drawer{position:fixed;top:0;right:0;height:100%;width:min(440px,92vw);background:#fff;z-index:50;
+    box-shadow:-8px 0 30px rgba(16,24,40,.18);transform:translateX(100%);transition:.18s;overflow-y:auto;padding:22px 22px 60px}
+  #drawer.on{transform:translateX(0)}
+  #drawer h3{margin:0 0 2px;font-size:17px}
+  #drawer .kind{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em}
+  #drawer .sec{margin-top:16px}
+  #drawer .sec h5{margin:0 0 5px;font-size:11px;text-transform:uppercase;letter-spacing:.07em;color:var(--dim)}
+  #drawer .sec p,#drawer .sec li{font-size:12.5px;color:var(--ink)}
+  #drawer ul{margin:4px 0;padding-left:18px}
+  #drawer li{margin:3px 0}
+  #close{position:absolute;top:14px;right:16px;font-size:20px;color:var(--dim);cursor:pointer;border:none;background:none}
+  .kv{font-size:12px;color:var(--muted)}.kv b{color:var(--ink)}
+  .tag{display:inline-block;font-size:10px;padding:2px 8px;border-radius:10px;background:#f1f3f7;border:1px solid var(--line);margin:2px 3px 0 0;color:var(--muted)}
+  /* progression tab */
+  #view-crm{display:none}
+  .mermaid{background:var(--card);border:1px solid var(--line);border-radius:11px;padding:14px;box-shadow:var(--shadow);overflow-x:auto}
+  table{width:100%;border-collapse:collapse;margin-top:16px;background:#fff;border:1px solid var(--line);border-radius:10px;overflow:hidden;font-size:12px}
+  th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{background:#f1f3f7;font-size:10.5px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
+  td .g{color:#0c6b53;font-weight:600}
+  .note{font-size:11.5px;color:var(--muted);margin-top:10px}
+  .foot{margin-top:26px;padding-top:14px;border-top:1px solid var(--line);font-size:11.5px;color:var(--dim)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>EasyOps — GTM Channel &amp; Pipeline Map</h1>
+    <div class="sub">Every source a deal can come from → how it's captured &amp; qualified → how it moves through the Attio pipeline (entry gate · stage actions · exit gate) → nurture. Click any card or stage for detail. <b>Status</b> reflects what's built today; <b>PROPOSED</b> = recommended, not yet live.</div>
+    <div class="nav">
+      <span class="tab active" data-view="map">Channel Map</span>
+      <span class="tab" data-view="crm">CRM Progression Logic</span>
+      <a href="startup_cpg_analysis.html">↗ Podcast Analysis</a>
+      <a href="channel_flow.html">↗ Channel Flow (v2)</a>
+    </div>
+    <div class="legend">
+      <span class="chip"><span class="sw" style="background:var(--out)"></span><b>Outbound</b></span>
+      <span class="chip"><span class="sw" style="background:var(--in)"></span><b>Inbound</b></span>
+      <span class="chip"><span class="sw" style="background:var(--partner)"></span><b>Partner</b></span>
+      <span class="chip"><span class="sw" style="background:var(--event)"></span><b>Events</b></span>
+      <span class="chip"><span class="sw" style="background:var(--paid)"></span><b>Paid</b></span>
+      &nbsp;·&nbsp;
+      <span class="chip"><span class="pill live">Live</span></span>
+      <span class="chip"><span class="pill building">Building</span></span>
+      <span class="chip"><span class="pill proposed">Proposed</span></span>
+    </div>
+  </header>
+
+  <!-- ============ VIEW: CHANNEL MAP ============ -->
+  <div id="view-map">
+    <div class="board">
+      <!-- COL 1: SOURCES -->
+      <div class="col">
+        <div class="h">1 · Sources</div>
+        <div id="sources"></div>
+      </div>
+      <div class="arrow">→</div>
+      <!-- COL 2: CAPTURE & QUALIFY -->
+      <div class="col">
+        <div class="h">2 · Capture &amp; Qualify</div>
+        <div class="hub">
+          <h4>🎯 Audit Tool / Capture Hub</h4>
+          <p><code>compliance-audit.tryeasyops.ai</code> — the shared convergence point. Also a channel itself (organic/SEO).</p>
+          <div class="kv"><b>Inputs:</b> audit submission · web form · badge scan · warm intro · manual add</div>
+          <div class="gate"><b>Qualify gate →</b> ICP fit ($500K–$50M rev · KeHE/UNFI seller) <b>+</b> pain-awareness tier (P = names fees; S = implied margin pain). Qualified → create <b>Deal = New Lead</b>. Not-yet-fit → Nurture. Out-of-ICP → archive / partner-refer.</div>
+        </div>
+      </div>
+      <div class="arrow">→</div>
+      <!-- COL 3: PIPELINE -->
+      <div class="col">
+        <div class="h">3 · Attio Pipeline</div>
+        <div id="stages"></div>
+      </div>
+      <div class="arrow">→</div>
+      <!-- COL 4: OUTCOME -->
+      <div class="col">
+        <div class="h">4 · Outcome</div>
+        <div class="outcome" style="border-color:var(--live)">
+          <div class="nm" style="font-weight:650;font-size:12.5px">✅ Design Partner Signed</div>
+          <div class="mini" style="font-size:10.5px;color:var(--muted);margin-top:3px">Onboard · ingest POs · patient-zero. Feeds <b>Referral loop</b>.</div>
+        </div>
+        <div class="outcome" style="border-color:var(--proposed)">
+          <div class="nm" style="font-weight:650;font-size:12.5px">↩ Closed Lost</div>
+          <div class="mini" style="font-size:10.5px;color:var(--muted);margin-top:3px">Tag <b>Loss Reason</b> → route to Recycle nurture; re-enter on trigger.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- NURTURE RAIL -->
+    <div class="nurtureRail">
+      <h4>◇ Nurture &amp; Recycle rail — parallel to the pipeline (runs on the lifecycle/marketing-automation engine)</h4>
+      <div class="ntracks" id="nurture"></div>
+    </div>
+  </div>
+
+  <!-- ============ VIEW: CRM PROGRESSION ============ -->
+  <div id="view-crm">
+    <div class="mermaid" id="mm">
+stateDiagram-v2
+    direction LR
+    [*] --> NewLead: qualified from any source
+    NewLead --> DiscoveryScheduled: meeting booked (Calendly)
+    DiscoveryScheduled --> RoutingGuidesIngested: discovery held + pain confirmed + invoice/routing shared
+    RoutingGuidesIngested --> ProposalTerms: audit delivered — recoverable $ proven
+    ProposalTerms --> DesignPartnerSigned: terms accepted
+    DesignPartnerSigned --> [*]
+    NewLead --> Nurture: no-show / not-ready
+    DiscoveryScheduled --> Nurture: stalled 14d
+    ProposalTerms --> ClosedLost: no decision / price
+    ClosedLost --> Nurture: recycle (by Loss Reason)
+    Nurture --> NewLead: re-engagement trigger
+    note right of RoutingGuidesIngested : Value-proof stage — quantify deduction leak $
+    note right of Nurture : Recognition vs Education drip by pain tier
+    </div>
+    <div class="note">Confirmed in Attio today: <b>New Lead</b>, <b>Discovery Scheduled</b> (Deals object) · <b>Discovery Scheduled → Routing Guides Ingested → Design Partner Signed</b> (Lead Pipeline list). <b>Proposal / Terms</b> is a recommended explicit stage between value-proof and signature. Real source channels currently logged: <b>SFA Show (9)</b>, <b>LinkedIn (1)</b>.</div>
+
+    <table id="stagetable">
+      <thead><tr><th>Stage</th><th>Entry gate (what moves it IN)</th><th>Actions at this stage</th><th>Exit gate (→ next)</th><th>SLA / owner</th><th>On stall → nurture</th></tr></thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <div class="foot">
+    EasyOps GTM · data-model-driven mockup for iteration · Attio spine reflects live workspace <code>easy-ops</code> ·
+    Sequencing note: outbound &amp; inbound run in parallel and refine each other (per Jordan's FancyFoods read — larger pain-aware brands close faster on <i>recognition</i> messaging; smaller pre-pain brands enter <i>education</i> nurture).
+  </div>
+</div>
+
+<!-- DRAWER -->
+<div id="scrim"></div>
+<aside id="drawer"><button id="close">×</button><div id="dbody"></div></aside>
+
+<script>
+/* ============ DATA MODEL ============ */
+const CH = [
+  // OUTBOUND
+  {id:'li',g:'outbound',c:'var(--out)',st:'live',nm:'LinkedIn Automation',owner:'gtm-content (Jordan, founder-led)',
+   tl:'Recognition-track DMs seeded by the 28 pain-aware podcast brands.',
+   steps:['Source list','Conn req','Value msg','Follow-up ×2','Reply→handraise / none→nurture'],
+   feeds:'Capture hub or straight to Discovery on a booked call.',
+   building:'Live for warm/recognition outreach. Copy uses founder vocabulary (chargebacks/OI/slotting), never "deductions".',
+   tools:['LinkedIn','Clay (enrich)','Attio (log)'],
+   guard:['Brief-to-draft mandatory','Research peer-review vs verified_product_claims.md','Human approval before send']},
+  {id:'em',g:'outbound',c:'var(--out)',st:'building',nm:'Email / Cold Sequences',owner:'gtm-outbound',
+   tl:'Vocabulary-matched 4-touch sequences to verified pain-aware brands.',
+   steps:['Verified list','Cold 1–4','Positive→book','Neutral→nurture','Bounce→scrub'],
+   feeds:'Capture hub → Deal = New Lead on positive reply.',
+   building:'Sequence copy in draft; list = enriched recognition cohort. Gated on deliverability warm-up.',
+   tools:['Sending platform','Clay/Apollo','Attio'],
+   guard:['No outbound copy ships without research QC','Suppression list honored']},
+  {id:'sms',g:'outbound',c:'var(--out)',st:'proposed',nm:'SMS Automation',owner:'proposed · gtm-outbound',
+   tl:'Post-opt-in only. Demo reminders, no-show re-book, audit-result nudge.',
+   steps:['Opt-in captured','Demo reminder','No-show recovery','Audit-ready ping'],
+   feeds:'Supports pipeline velocity (show-rate), not a cold channel.',
+   building:'NOT built. Recommended for measurable lift on demo show-rate & no-show recovery. TCPA-compliant opt-in required.',
+   tools:['SMS API (e.g. Twilio)','Attio triggers'],
+   guard:['Explicit opt-in only','No cold SMS','Quiet-hours + STOP handling']},
+  // INBOUND
+  {id:'content',g:'inbound',c:'var(--in)',st:'building',nm:'Content (LinkedIn + Substack)',owner:'gtm-content (Jordan)',
+   tl:'Recognition + Education pillars. The vocabulary-gap play.',
+   steps:['Recognition posts','Education posts','Translation guide','CTA → audit'],
+   feeds:'Drives traffic to the Audit Tool / Capture hub.',
+   building:'Pillars defined from podcast corpus; deduction content has ~0.04% competition in the ecosystem. Calendar ramping to 3–5 posts/wk.',
+   tools:['LinkedIn','Substack','audit tool CTA'],
+   guard:['Brief-to-draft','Claims cite Fireflies/POC/verified_product_claims.md']},
+  {id:'audit',g:'inbound',c:'var(--in)',st:'live',nm:'Audit Tool / SEO',owner:'EasyOps (product) + strategist',
+   tl:'Lead magnet AND capture hub. Organic + SEO entry.',
+   steps:['Land','Submit invoice/PO','Audit result','Book demo'],
+   feeds:'IS the capture hub — converts to Deal = New Lead.',
+   building:'Live at compliance-audit.tryeasyops.ai. Language-matched landing variants (chargeback audit / OI check) to A/B.',
+   tools:['Audit app','Attio','Calendly'],
+   guard:['Only verified product claims on page','No fabricated benchmarks']},
+  {id:'paid',g:'paid',c:'var(--paid)',st:'proposed',nm:'Paid Media — Meta',owner:'proposed · gtm-content',
+   tl:'Retarget site visitors + lookalike of the 28 pain-aware brands.',
+   steps:['Retarget visitors','Lookalike seed','Creative test','CTA → audit'],
+   feeds:'Amplifies proven content into the Capture hub.',
+   building:'NOT built. Hold until organic content proves creative/hooks (content-first). Then scale winning hooks as paid.',
+   tools:['Meta Ads','audit tool','pixel'],
+   guard:['Only run creative already validated organically','Spend cap until CAC proven']},
+  // PARTNER
+  {id:'partner',g:'partner',c:'var(--partner)',st:'building',nm:'Channel Partners',owner:'strategist + Christina Komen',
+   tl:'Brokers (Presence), 3PLs (Good Company Ships), VC-list intros.',
+   steps:['Partner intro','Warm hand-off','Discovery direct'],
+   feeds:'Warm intros bypass cold capture → often enter at Discovery.',
+   building:'VC-list activation in motion (250-firm list). Broker intros via Christina Komen. 3PLs handling DTC→wholesale transitions.',
+   tools:['Attio Partnerships list','VC list CSV'],
+   guard:['Track source_channel = partner name','Referral attribution']},
+  {id:'referral',g:'partner',c:'var(--partner)',st:'proposed',nm:'Referral Loop',owner:'proposed',
+   tl:'Design partners → warm intros to peer brands.',
+   steps:['Happy user','Ask','Intro','New Deal'],
+   feeds:'Cheapest channel once patient-zero users are live.',
+   building:'NOT built. Activate after first design partners see recovered $. Highest-trust source in a tight community.',
+   tools:['Attio','incentive TBD'],
+   guard:['Only reference customers with consent (Sky & Sol is sole confirmed today)']},
+  // EVENTS
+  {id:'show',g:'event',c:'var(--event)',st:'live',nm:'KeHE / Fancy Food (SFA) Shows',owner:'strategist + research',
+   tl:'Booth + badge scans. SFA Show is the #1 real source today (9 deals).',
+   steps:['Booth / walk floor','Badge scan','Follow-up seq','Discovery'],
+   feeds:'Capture hub with event tag → New Lead (source = SFA/KeHE Show).',
+   building:'Live. Fancy Food (SFA) already the top logged channel. KeHE Holiday Show = immediate priority prospect list.',
+   tools:['Attio (Fancy Food Show list)','badge export'],
+   guard:['Consent-based follow-up','Dedup vs existing records']},
+];
+
+const STAGES = [
+  {id:'new',nm:'New Lead',attio:true,
+   entry:'Any qualified source clears the ICP + pain gate.',
+   actions:['Enrich (Clay/Apollo)','Set source_channel + ICP score + pain tier','Assign owner','Send audit link if not done'],
+   exit:'Meeting booked via Calendly.',
+   sla:'Touch < 24h · owner: outbound/strategist',
+   stall:'No booking in 7d → Recognition or Education drip by pain tier.'},
+  {id:'disc',nm:'Discovery Scheduled',attio:true,
+   entry:'Calendly meeting booked.',
+   actions:['Pre-call research (podcast quote if guest)','Confirm KeHE/UNFI + PO volume','Reminder (email; SMS proposed)'],
+   exit:'Discovery held + pain confirmed + they share a KeHE/UNFI invoice or routing guide.',
+   sla:'Hold within 7d · owner: strategist',
+   stall:'No-show / stalled 14d → reschedule; recycle to nurture.'},
+  {id:'routing',nm:'Routing Guides Ingested',attio:true,
+   entry:'Invoice / routing guide received.',
+   actions:['Ingest routing guides','Run audit','Quantify deduction leak $ (the value proof)'],
+   exit:'Audit delivered showing recoverable $ + verbal interest.',
+   sla:'Audit back in 48h · owner: product + strategist',
+   stall:'No engagement w/ audit → Recognition drip w/ benchmark content.'},
+  {id:'terms',nm:'Proposal / Terms',attio:false,
+   entry:'Value proven; recoverable $ accepted.',
+   actions:['Present pricing tier (by PO volume)','Design-partner terms','Handle objections (objection-map)'],
+   exit:'Terms accepted.',
+   sla:'Proposal within 3d · owner: strategist',
+   stall:'No decision / price → Closed Lost w/ Loss Reason → Recycle.'},
+  {id:'signed',nm:'Design Partner Signed',attio:true,
+   entry:'Terms accepted / signed.',
+   actions:['Onboard','Ingest POs','Kick off referral ask (proposed)'],
+   exit:'— (Closed Won / patient-zero).',
+   sla:'Onboard < 5d · owner: product',
+   stall:'—'},
+];
+
+const NURTURE = [
+  {nm:'Recognition drip (pain-aware, not-yet-ready)',
+   d:'Monthly deduction-benchmark content, invoice-season nudges, gold-quote posts. For larger brands that feel the pain but aren\'t ready to buy.',
+   re:'Re-entry → New Lead on: reply · audit completion · content re-engagement'},
+  {nm:'Education drip (pre-pain / smaller)',
+   d:'Terminology translation guide, "what\'s on your KeHE invoice" series. Plants the category before the pain is felt.',
+   re:'Re-entry → New Lead on: engagement threshold · self-serve audit'},
+  {nm:'Recycle (Closed Lost)',
+   d:'Quarterly check-in tied to the tagged Loss Reason (price / timing / no-decision). Keeps lost deals warm.',
+   re:'Re-entry → New Lead on: loss-reason trigger resolved (e.g. hit KeHE volume, new fiscal year)'},
+];
+
+/* ============ RENDER ============ */
+const groups = {outbound:'Outbound',inbound:'Inbound',paid:'Paid',partner:'Partner',event:'Events'};
+const gcol = {outbound:'var(--out)',inbound:'var(--in)',paid:'var(--paid)',partner:'var(--partner)',event:'var(--event)'};
+const src = document.getElementById('sources');
+let lastG=null;
+CH.forEach(c=>{
+  if(c.g!==lastG){const gl=document.createElement('div');gl.className='grouplabel';gl.style.borderColor=gcol[c.g];gl.style.color=gcol[c.g];gl.textContent=groups[c.g];src.appendChild(gl);lastG=c.g;}
+  const el=document.createElement('div');el.className='card';el.style.borderLeftColor=c.c;
+  el.innerHTML=`<div class="top"><span class="nm">${c.nm}</span><span class="pill ${c.st}">${c.st}</span></div>
+    <div class="tl">${c.tl}</div>
+    <div class="steps">${c.steps.map(s=>`<span class="step">${s}</span>`).join('')}</div>`;
+  el.onclick=()=>openCh(c);src.appendChild(el);
+});
+
+const stEl=document.getElementById('stages');
+STAGES.forEach((s,i)=>{
+  const el=document.createElement('div');el.className='stage';
+  el.innerHTML=`<div class="nm">${i+1}. ${s.nm}<span class="badge ${s.attio?'':'plan'}">${s.attio?'in Attio':'proposed'}</span></div>
+    <div class="mini"><b>Exit →</b> ${s.exit}</div>`;
+  el.onclick=()=>openStage(s);stEl.appendChild(el);
+});
+
+const nEl=document.getElementById('nurture');
+NURTURE.forEach(n=>{const el=document.createElement('div');el.className='ntrack';
+  el.innerHTML=`<div class="nm">${n.nm}</div><div class="d">${n.d}</div><div class="re">${n.re}</div>`;nEl.appendChild(el);});
+
+// stage table
+const tb=document.querySelector('#stagetable tbody');
+STAGES.forEach((s,i)=>{const tr=document.createElement('tr');
+  tr.innerHTML=`<td><b>${i+1}. ${s.nm}</b><br><span class="tag">${s.attio?'in Attio':'proposed'}</span></td>
+   <td>${s.entry}</td><td><ul style="margin:0;padding-left:16px">${s.actions.map(a=>`<li>${a}</li>`).join('')}</ul></td>
+   <td class="g">${s.exit}</td><td>${s.sla}</td><td>${s.stall}</td>`;tb.appendChild(tr);});
+
+/* ============ DRAWER ============ */
+const scrim=document.getElementById('scrim'),drawer=document.getElementById('drawer'),dbody=document.getElementById('dbody');
+function show(){scrim.classList.add('on');drawer.classList.add('on');}
+function hide(){scrim.classList.remove('on');drawer.classList.remove('on');}
+scrim.onclick=hide;document.getElementById('close').onclick=hide;
+function openCh(c){dbody.innerHTML=`<div class="kind">${groups[c.g]} channel · <span class="pill ${c.st}">${c.st}</span></div>
+  <h3>${c.nm}</h3>
+  <div class="sec"><h5>What we're building</h5><p>${c.building}</p></div>
+  <div class="sec"><h5>Sequence</h5><p>${c.steps.map(s=>`<span class="tag">${s}</span>`).join('')}</p></div>
+  <div class="sec"><h5>Feeds into</h5><p>${c.feeds}</p></div>
+  <div class="sec"><h5>Owner</h5><p class="kv">${c.owner}</p></div>
+  <div class="sec"><h5>Tools</h5><p>${c.tools.map(t=>`<span class="tag">${t}</span>`).join('')}</p></div>
+  <div class="sec"><h5>Guardrails</h5><ul>${c.guard.map(g=>`<li>${g}</li>`).join('')}</ul></div>`;show();}
+function openStage(s){dbody.innerHTML=`<div class="kind">Pipeline stage · ${s.attio?'live in Attio':'proposed'}</div>
+  <h3>${s.nm}</h3>
+  <div class="sec"><h5>Entry gate (moves it IN)</h5><p>${s.entry}</p></div>
+  <div class="sec"><h5>Actions at this stage</h5><ul>${s.actions.map(a=>`<li>${a}</li>`).join('')}</ul></div>
+  <div class="sec"><h5>Exit gate (→ next)</h5><p class="kv" style="color:#0c6b53;font-weight:600">${s.exit}</p></div>
+  <div class="sec"><h5>SLA / owner</h5><p class="kv">${s.sla}</p></div>
+  <div class="sec"><h5>On stall → nurture</h5><p>${s.stall}</p></div>`;show();}
+
+/* ============ TABS ============ */
+document.querySelectorAll('.tab').forEach(t=>t.onclick=()=>{
+  document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));t.classList.add('active');
+  const v=t.dataset.view;
+  document.getElementById('view-map').style.display=v==='map'?'block':'none';
+  document.getElementById('view-crm').style.display=v==='crm'?'block':'none';
+});
+mermaid.initialize({startOnLoad:true,theme:'neutral',flowchart:{curve:'basis'}});
+</script>
+</body>
+</html>
