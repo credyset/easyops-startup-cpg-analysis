@@ -3,291 +3,337 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>EasyOps — GTM Channel Flow</title>
+<title>EasyOps — GTM Flow</title>
 <style>
   :root{
-    --bg:#0d1117; --panel:#161b22; --panel2:#1c2330; --line:#30363d;
-    --ink:#e6edf3; --muted:#8b949e; --dim:#6e7681;
-    --accent:#4cc38a; --accent2:#3b82f6; --warn:#e3b341; --pink:#db61a2; --purple:#a371f7;
-    --chip:#21262d;
+    --bg:#ffffff; --ink:#1f2733; --muted:#6b7480; --dim:#9aa2ad; --line:#e3e7ec;
+    --li:#3b82f6; --li-bg:#e8f1fe; --li-node:#2f6fe0;
+    --em:#22a565; --em-bg:#e7f7ee; --em-node:#1f9d5f;
+    --content:#ec6f2b; --content-bg:#fdeee2;
+    --audit:#e3a72b; --audit-bg:#fdf3dc;
+    --web:#a371f7; --web-bg:#f2ebfe;
+    --partner:#0f9d9d; --partner-bg:#e2f6f6;
+    --crm:#1f9d5f; --crm-bg:#eef2f5; --crm-node:#1f9d5f;
+    --mkt:#8b53e6; --mkt-bg:#f1e9fd; --mkt-node:#7c46d6;
+    --txt:#12b5cb;
   }
   *{box-sizing:border-box}
-  body{margin:0;background:var(--bg);color:var(--ink);
+  body{margin:0;background:#f6f8fa;color:var(--ink);
     font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-    line-height:1.5;-webkit-font-smoothing:antialiased}
-  .wrap{max-width:1280px;margin:0 auto;padding:32px 24px 80px}
-  header{border-bottom:1px solid var(--line);padding-bottom:20px;margin-bottom:28px}
-  h1{font-size:24px;margin:0 0 6px;letter-spacing:-.02em}
-  .sub{color:var(--muted);font-size:14px;max-width:760px}
-  .legend{display:flex;flex-wrap:wrap;gap:14px;margin-top:16px;font-size:12px;color:var(--muted)}
-  .legend span{display:inline-flex;align-items:center;gap:6px}
-  .dot{width:10px;height:10px;border-radius:3px;display:inline-block}
+    line-height:1.4;-webkit-font-smoothing:antialiased}
+  .topnav{background:#fff;border-bottom:1px solid var(--line);padding:10px 22px;display:flex;gap:18px;align-items:center;font-size:13px;position:sticky;top:0;z-index:20}
+  .topnav a{color:var(--muted);text-decoration:none;padding:5px 10px;border-radius:6px}
+  .topnav a.active{background:#eef4ff;color:var(--li-node);font-weight:600}
+  .topnav a:hover{background:#f1f3f5}
+  .brand{font-weight:800;letter-spacing:-.02em;color:var(--ink);margin-right:auto}
+  .brand span{color:var(--em)}
 
-  /* stage rails */
-  .stage-label{font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:var(--dim);
-    margin:0 0 12px;font-weight:600}
-  .flow{display:grid;grid-template-columns:1.15fr 44px 1fr;gap:0;align-items:stretch}
-  @media(max-width:900px){.flow{grid-template-columns:1fr}.arrowcol{display:none!important}}
+  .wrap{padding:20px 22px 70px;overflow-x:auto}
+  .board{min-width:1500px;position:relative}
 
-  .channels{display:flex;flex-direction:column;gap:10px}
-  .card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px 16px;
-    cursor:pointer;transition:.15s;position:relative;overflow:hidden}
-  .card:hover{border-color:var(--dim);background:var(--panel2)}
-  .card.active{border-color:var(--accent);background:var(--panel2)}
-  .card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--c,var(--accent))}
-  .card h3{margin:0;font-size:14px;display:flex;align-items:center;gap:8px;justify-content:space-between}
-  .card .tag{font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;font-weight:600}
-  .card p{margin:6px 0 0;font-size:12.5px;color:var(--muted)}
-  .owner{font-size:11px;color:var(--dim);margin-top:8px}
+  .board-head{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:14px}
+  .board-head h1{font-size:22px;margin:0;letter-spacing:-.02em}
+  .board-head .cap{font-size:12.5px;color:var(--muted);margin-top:3px}
 
-  .arrowcol{display:flex;align-items:center;justify-content:center}
-  .arrowcol svg{width:44px;height:100%}
+  /* legend */
+  .legend{display:flex;gap:26px;font-size:11px}
+  .legcol b{display:block;font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--dim);margin-bottom:5px}
+  .legrow{display:flex;align-items:center;gap:6px;margin-bottom:4px;color:var(--muted)}
+  .pill{display:inline-block;width:34px;height:15px;border-radius:5px}
+  .arrowkey{width:26px;height:0;border-top:2px solid var(--ink);position:relative}
+  .arrowkey::after{content:"";position:absolute;right:-1px;top:-3px;border-left:5px solid var(--ink);border-top:3px solid transparent;border-bottom:3px solid transparent}
 
-  /* spine */
-  .spine{display:flex;flex-direction:column;gap:12px}
-  .hub{background:linear-gradient(180deg,#132b22,#0f1f19);border:1px solid var(--accent);
-    border-radius:12px;padding:18px 18px}
-  .hub h2{margin:0 0 4px;font-size:16px;color:var(--accent)}
-  .hub .url{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:11.5px;color:var(--muted)}
-  .hub p{margin:8px 0 0;font-size:12.5px;color:#b9c6d1}
-  .funnel{display:flex;flex-direction:column;gap:8px}
-  .step{background:var(--panel);border:1px solid var(--line);border-radius:9px;padding:11px 14px;
-    display:flex;align-items:center;gap:10px;font-size:13px}
-  .step .n{width:22px;height:22px;border-radius:50%;background:var(--chip);color:var(--muted);
-    display:grid;place-items:center;font-size:11px;font-weight:700;flex:none}
-  .down{display:grid;place-items:center;color:var(--dim);font-size:16px;height:6px;margin:-3px 0}
+  /* mega section labels */
+  .mega{font-size:44px;font-weight:800;color:#cfd6de;letter-spacing:-.02em;line-height:1}
+  .divider{border:0;border-top:2px solid #cbd2da;margin:22px 0}
 
-  .pipeline{background:var(--panel);border:1px dashed var(--accent2);border-radius:12px;padding:16px 18px}
-  .pipeline h2{margin:0 0 3px;font-size:14px;color:var(--accent2)}
-  .pipeline .meta{font-size:11px;color:var(--dim);margin-bottom:12px}
-  .stages{display:flex;flex-direction:column;gap:7px}
-  .pstage{display:flex;align-items:center;gap:10px;font-size:12.5px;background:var(--panel2);
-    border:1px solid var(--line);border-radius:8px;padding:9px 12px}
-  .pstage .b{width:8px;height:8px;border-radius:50%;background:var(--accent2);flex:none}
+  /* channel container */
+  .chan{border-radius:14px;padding:14px 14px 16px;margin-bottom:16px}
+  .chan-title{font-size:15px;font-weight:750;margin:0 0 2px;display:flex;align-items:center;gap:8px}
+  .chan-sub{font-size:11px;color:var(--muted);margin:0 0 12px}
+  .chan.li{background:var(--li-bg)} .chan.em{background:var(--em-bg)}
+  .chan.content{background:var(--content-bg)} .chan.audit{background:var(--audit-bg)}
+  .chan.web{background:var(--web-bg)} .chan.partner{background:var(--partner-bg)}
 
-  /* detail drawer */
-  .detail{margin-top:28px;background:var(--panel);border:1px solid var(--line);border-radius:12px;
-    padding:0;overflow:hidden;min-height:120px}
-  .detail-head{padding:16px 20px;border-bottom:1px solid var(--line);background:var(--panel2)}
-  .detail-head h2{margin:0;font-size:16px}
-  .detail-head .k{font-size:12px;color:var(--muted);margin-top:4px}
-  .detail-body{padding:18px 20px;display:grid;grid-template-columns:1fr 1fr;gap:22px}
-  @media(max-width:760px){.detail-body{grid-template-columns:1fr}}
-  .detail-body h4{margin:0 0 8px;font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:var(--dim)}
-  .detail-body ul{margin:0;padding-left:18px;font-size:13px;color:#c7d1db}
-  .detail-body li{margin-bottom:6px}
-  .chips{display:flex;flex-wrap:wrap;gap:6px}
-  .chip{background:var(--chip);border:1px solid var(--line);border-radius:20px;padding:3px 10px;font-size:11px;color:var(--muted)}
-  .placeholder{padding:26px 20px;color:var(--dim);font-size:13px;text-align:center}
-  .note{margin-top:28px;font-size:12px;color:var(--dim);border-top:1px solid var(--line);padding-top:14px}
-  .status{display:inline-block;font-size:10px;font-weight:700;border-radius:4px;padding:2px 7px;margin-left:6px}
-  .st-live{background:#12291f;color:var(--accent);border:1px solid #1e4634}
-  .st-build{background:#2b2413;color:var(--warn);border:1px solid #4a3d17}
-  .st-plan{background:#1c2330;color:var(--muted);border:1px solid var(--line)}
+  .status{font-size:9px;font-weight:700;letter-spacing:.06em;padding:2px 7px;border-radius:20px;text-transform:uppercase}
+  .s-live{background:#d5f5e3;color:#0f7a44} .s-build{background:#fdeecb;color:#8a6415} .s-plan{background:#e6e9ee;color:#5a636e}
+
+  /* nodes */
+  .seq{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+  .col{display:flex;flex-direction:column;gap:8px}
+  .node{border-radius:10px;padding:9px 12px;font-size:12px;font-weight:600;color:#fff;text-align:center;min-width:120px;box-shadow:0 1px 2px rgba(0,0,0,.08)}
+  .node .n-sub{font-size:9.5px;font-weight:500;opacity:.9;display:block;margin-top:2px}
+  .node.li{background:var(--li-node)} .node.em{background:var(--em-node)}
+  .node.crm{background:var(--crm-node)} .node.mkt{background:var(--mkt-node)}
+  .node.txt{background:var(--txt)} .node.audit{background:var(--audit)}
+  .node.web{background:#9160e8}
+  .node.ghost{background:#fff;color:var(--ink);border:1.5px solid var(--line);box-shadow:none}
+  .node.manual{background:#fff5e0;color:#8a6415;border:1.5px dashed #e3b341;box-shadow:none;font-weight:600}
+  .node.slack{background:#fff0f6;color:#b5266e;border:1px solid #f3c4dc;box-shadow:none;font-size:10.5px;padding:6px 10px}
+
+  .list-node{width:96px;height:96px;border-radius:50%;display:flex;align-items:center;justify-content:center;text-align:center;font-size:12.5px;font-weight:700;color:#fff;box-shadow:0 2px 5px rgba(0,0,0,.12);padding:8px}
+  .list-node.li{background:var(--li-node)} .list-node.em{background:var(--em-node)}
+
+  .arr{color:var(--dim);font-size:16px;font-weight:700}
+  .arr.down{transform:rotate(90deg)}
+
+  /* the big spine */
+  .spine{background:var(--crm-bg);border:1px solid var(--line);border-radius:16px;padding:16px 18px}
+  .spine h2{font-size:16px;margin:0 0 2px} .spine .cap{font-size:11px;color:var(--muted);margin:0 0 14px}
+  .rowflow{display:flex;align-items:center;gap:7px;flex-wrap:wrap;margin-bottom:10px}
+
+  /* marketing platform */
+  .mkt-wrap{background:var(--mkt-bg);border-radius:16px;padding:16px}
+  .mkt-wrap h2{font-size:15px;margin:0 0 2px;color:#5a2ca0} .mkt-wrap .cap{font-size:11px;color:#7a5aa8;margin:0 0 12px}
+  .mkt-cols{display:flex;gap:14px}
+  .mkt-col{flex:1;display:flex;flex-direction:column;gap:7px}
+
+  /* layout grid */
+  .grid{display:grid;grid-template-columns:120px 1fr;gap:18px}
+  .maincols{display:grid;grid-template-columns:1.05fr 1.35fr;gap:22px;align-items:start}
+
+  .feed{font-size:10px;color:var(--em);font-weight:700;text-align:center;margin:2px 0}
+  .foot{margin-top:26px;padding-top:14px;border-top:1px solid var(--line);font-size:11.5px;color:var(--muted);display:flex;gap:28px;flex-wrap:wrap}
+  .foot b{color:var(--ink)}
 </style>
 </head>
 <body>
+
+<div class="topnav">
+  <span class="brand">Easy<span>Ops</span> · GTM</span>
+  <a href="startup_cpg_analysis.html">Podcast Analysis</a>
+  <a href="channel_flow.html" class="active">Channel Flow</a>
+</div>
+
 <div class="wrap">
-  <header>
-    <h1>EasyOps — GTM Channel Flow</h1>
-    <div class="sub">How every inbound and outbound motion converges on a single spine: the compliance audit as shared lead-capture, then demo → signup → the Attio Lead Pipeline. Click any channel to expand what we're building, who owns it, and its status.</div>
+<div class="board">
+
+  <div class="board-head">
+    <div>
+      <h1>EasyOps — GTM Channel Flow</h1>
+      <div class="cap">Every channel converges on the compliance audit → demo → Attio pipeline. Content-first; outbound runs in parallel and refines it.</div>
+    </div>
     <div class="legend">
-      <span><i class="dot" style="background:var(--accent)"></i>Content-led (inbound)</span>
-      <span><i class="dot" style="background:var(--accent2)"></i>Outbound</span>
-      <span><i class="dot" style="background:var(--purple)"></i>Partner-sourced</span>
-      <span><i class="dot" style="background:var(--warn)"></i>Event-driven</span>
-      <span class="status st-live">LIVE</span>
-      <span class="status st-build">BUILDING</span>
-      <span class="status st-plan">PLANNED</span>
+      <div class="legcol">
+        <b>Outbound</b>
+        <div class="legrow"><span class="pill" style="background:var(--li-node)"></span>LinkedIn</div>
+        <div class="legrow"><span class="pill" style="background:var(--em-node)"></span>Email</div>
+        <div class="legrow"><span class="pill" style="background:var(--partner)"></span>Partners</div>
+      </div>
+      <div class="legcol">
+        <b>Inbound</b>
+        <div class="legrow"><span class="pill" style="background:var(--content)"></span>Content</div>
+        <div class="legrow"><span class="pill" style="background:var(--audit)"></span>Audit Tool</div>
+        <div class="legrow"><span class="pill" style="background:var(--web)"></span>Website</div>
+      </div>
+      <div class="legcol">
+        <b>Tools</b>
+        <div class="legrow"><span class="pill" style="background:var(--crm-node)"></span>Attio (CRM)</div>
+        <div class="legrow"><span class="pill" style="background:var(--txt)"></span>Calendly / reminders</div>
+        <div class="legrow"><span class="pill" style="background:var(--mkt-node)"></span>Marketing / nurture</div>
+        <div class="legrow"><span class="arrowkey"></span>Manual action</div>
+      </div>
     </div>
-  </header>
+  </div>
 
-  <div class="flow">
-    <!-- CHANNELS -->
-    <div>
-      <p class="stage-label">Channels · top of funnel</p>
-      <div class="channels" id="channels"></div>
-    </div>
+  <!-- ============ OUTBOUND ============ -->
+  <div class="grid">
+    <div class="mega">OUT<br>BOUND</div>
+    <div class="maincols">
 
-    <!-- arrows -->
-    <div class="arrowcol">
-      <svg viewBox="0 0 44 100" preserveAspectRatio="none">
-        <defs><marker id="ah" markerWidth="7" markerHeight="7" refX="5" refY="3.5" orient="auto">
-          <path d="M0,0 L7,3.5 L0,7 Z" fill="#4cc38a"/></marker></defs>
-        <path d="M2,50 C24,50 20,50 40,50" stroke="#30363d" stroke-width="1.4" fill="none" marker-end="url(#ah)"/>
-      </svg>
-    </div>
+      <!-- LEFT: outbound channels -->
+      <div>
+        <!-- LinkedIn -->
+        <div class="chan li">
+          <div class="chan-title">LinkedIn Automation <span class="status s-live">Live</span></div>
+          <div class="chan-sub">Jordan's founder-led voice. Recognition-track messaging seeded by the 28 pain-aware podcast brands.</div>
+          <div class="seq">
+            <div class="list-node li">LinkedIn List</div>
+            <span class="arr">→</span>
+            <div class="col">
+              <div class="node li">Connection Req + Note</div>
+              <span class="arr down" style="align-self:center">→</span>
+              <div class="node li">Message Sent <span class="n-sub">on accept</span></div>
+              <span class="arr down" style="align-self:center">→</span>
+              <div class="node li">Followup #1 <span class="n-sub">delay</span></div>
+              <span class="arr down" style="align-self:center">→</span>
+              <div class="node li">Followup #2 <span class="n-sub">delay</span></div>
+            </div>
+            <span class="arr">→</span>
+            <div class="col">
+              <div class="node li" style="min-width:140px">Warm LinkedIn Response</div>
+              <div class="node ghost">Manual reply</div>
+              <div class="node ghost">Cold-response templates</div>
+            </div>
+          </div>
+          <div class="feed">▼ warm response → Attio</div>
+        </div>
 
-    <!-- SPINE -->
-    <div>
-      <p class="stage-label">Shared spine · convergence → conversion → CRM</p>
+        <!-- Email -->
+        <div class="chan em">
+          <div class="chan-title">Email / Outbound Sequences <span class="status s-build">Building</span></div>
+          <div class="chan-sub">Vocabulary-matched copy — "chargebacks / OI / slotting," never "deductions." Channel-specific cold cadence.</div>
+          <div class="seq">
+            <div class="list-node em">Email List</div>
+            <span class="arr">→</span>
+            <div class="col">
+              <div class="node em">Cold Email 1</div>
+              <div class="node em">Cold Email 2</div>
+              <div class="node em">Cold Email 3 <span class="n-sub">delay</span></div>
+              <div class="node em">Cold Email 4 <span class="n-sub">delay</span></div>
+            </div>
+            <span class="arr">→</span>
+            <div class="col">
+              <div class="node em" style="min-width:140px">Warm Email Response</div>
+              <div class="node ghost">Manual reply</div>
+              <div class="node ghost">Cold-response templates</div>
+            </div>
+          </div>
+          <div class="feed">▼ warm response → Attio</div>
+        </div>
+
+        <!-- Channel Partners -->
+        <div class="chan partner">
+          <div class="chan-title">Channel Partners <span class="status s-build">Building</span></div>
+          <div class="chan-sub">Brokers (Christina Komen / Presence), 3PLs (Good Company Ships), CPG VC list. Warm intros bypass cold steps.</div>
+          <div class="seq">
+            <div class="node" style="background:var(--partner);min-width:130px">Broker / 3PL / VC intro</div>
+            <span class="arr">→</span>
+            <div class="node ghost">Referred brand</div>
+            <span class="arr">→</span>
+            <div class="node" style="background:var(--partner)">Warm intro call</div>
+            <span class="arr">→</span>
+            <div class="feed" style="margin:0">→ Attio as Warm Lead</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT: the Attio spine -->
       <div class="spine">
-        <div class="hub">
-          <h2>Compliance Audit <span class="status st-build">BUILDING</span></h2>
-          <div class="url">compliance-audit.tryeasyops.ai</div>
-          <p>The lead-capture spine. Every channel funnels here. Vocabulary-matched CTA — "See what your distributor is actually charging you in 48 hours" (chargebacks / OI / slotting, not "deductions"). Output doubles as the data moat for investor conversations.</p>
+        <h2>Attio — Lead Pipeline (the spine)</h2>
+        <div class="cap">Every channel lands here. Slack fires on new entries. Warm path → design partner; cold path → nurture.</div>
+
+        <div class="node slack" style="display:inline-block;margin-bottom:10px">⚡ Slack: "New brand added to Attio"</div>
+
+        <div class="rowflow">
+          <div class="node crm" style="min-width:150px">Added to Attio <span class="n-sub">LinkedIn / Email / Audit / Partner</span></div>
+          <span class="arr">→</span>
+          <div class="node crm">Reengage on LinkedIn</div>
+          <span class="arr">→</span>
+          <div class="node crm">Warm Lead</div>
+          <span class="arr">→</span>
+          <div class="node crm">Demo / Discovery Scheduled</div>
         </div>
-        <div class="down">▼</div>
-        <div class="funnel">
-          <div class="step"><span class="n">1</span> Audit completed → deduction leak quantified</div>
-          <div class="step"><span class="n">2</span> Demo booked (Calendly)</div>
-          <div class="step"><span class="n">3</span> Signup / design-partner conversation</div>
+
+        <div class="rowflow">
+          <div class="node txt">Calendly reminder</div>
+          <div class="node txt">Text / email nudge</div>
+          <span class="arr">→</span>
+          <div class="node crm">Discovery Complete: <span class="n-sub">Qualified / Warm</span></div>
+          <span class="arr">→</span>
+          <div class="node crm">Routing Guides Ingested</div>
+          <span class="arr">→</span>
+          <div class="node crm" style="background:#0f7a44">Design Partner Signed</div>
         </div>
-        <div class="down">▼</div>
-        <div class="pipeline">
-          <h2>Attio — EasyOps Lead Pipeline</h2>
-          <div class="meta">The CRM spine every channel resolves into</div>
-          <div class="stages">
-            <div class="pstage"><span class="b"></span> Discovery Scheduled</div>
-            <div class="pstage"><span class="b"></span> Routing Guides Ingested</div>
-            <div class="pstage"><span class="b"></span> Design Partner Signed</div>
+
+        <div class="rowflow">
+          <div class="node crm" style="background:#8a9099">Discovery Complete: <span class="n-sub">Qualified / Cold</span></div>
+          <span class="arr">→</span>
+          <div class="node manual">Mark "Qualified Cold" → move to nurture</div>
+          <span class="arr">→</span>
+          <div class="feed" style="margin:0">▼ Marketing Platform</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- ============ INBOUND ============ -->
+  <div class="grid">
+    <div class="mega">IN<br>BOUND</div>
+    <div class="maincols">
+
+      <!-- LEFT: inbound channels -->
+      <div>
+        <!-- Content -->
+        <div class="chan content">
+          <div class="chan-title">Content <span class="status s-build">Building</span></div>
+          <div class="chan-sub">Vocabulary-matched pillars. Recognition track (pain-aware) + education track (pre-pain). Drives to audit tool.</div>
+          <div class="seq">
+            <div class="node" style="background:var(--content)">Recognition posts <span class="n-sub">"you know KeHE fees are wrong"</span></div>
+            <div class="node" style="background:var(--content)">Education posts <span class="n-sub">"what's on your KeHE invoice"</span></div>
+            <span class="arr">→</span>
+            <div class="node ghost">CTA → run a free audit</div>
+          </div>
+          <div class="feed">▼ drives traffic to Audit Tool</div>
+        </div>
+
+        <!-- Audit tool -->
+        <div class="chan audit">
+          <div class="chan-title">Audit Tool <span class="status s-live">Live</span></div>
+          <div class="chan-sub">compliance-audit.tryeasyops.ai — the lead magnet & shared convert hub. 48-hr deduction audit.</div>
+          <div class="seq">
+            <div class="node audit">Land on audit page</div>
+            <span class="arr">→</span>
+            <div class="node audit">Submit brand + POs</div>
+            <span class="arr">→</span>
+            <div class="node audit" style="background:#c98a15">Audit Completed <span class="n-sub">converts</span></div>
+            <span class="arr">→</span>
+            <div class="feed" style="margin:0">→ Attio + book demo</div>
+          </div>
+        </div>
+
+        <!-- Website / KeHE event -->
+        <div class="chan web">
+          <div class="chan-title">Website &amp; KeHE Holiday Show <span class="status s-plan">Planned</span></div>
+          <div class="chan-sub">Organic site traffic + direct outreach to scraped/enriched Holiday Show exhibitors.</div>
+          <div class="seq">
+            <div class="node web">Website Visit <span class="n-sub">converts</span></div>
+            <div class="node ghost">Website Visit <span class="n-sub">no action → retarget</span></div>
+            <span class="arr">→</span>
+            <div class="node web">KeHE Show list <span class="n-sub">enriched exhibitors</span></div>
+            <span class="arr">→</span>
+            <div class="feed" style="margin:0">→ Audit / Outbound lists</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT: marketing / nurture platform -->
+      <div class="mkt-wrap">
+        <h2>Marketing Platform — Nurture</h2>
+        <div class="cap">Cold-qualified + pre-pain brands drip here until the pain surfaces, then re-enter the pipeline.</div>
+        <div class="mkt-cols">
+          <div class="mkt-col">
+            <div class="node mkt">Recognition Drip <span class="n-sub">pain-aware brands</span></div>
+            <div class="node mkt">Email #1</div>
+            <div class="node mkt">Email #2 <span class="n-sub">delay</span></div>
+            <div class="node mkt">Email #3 <span class="n-sub">delay</span></div>
+          </div>
+          <div class="mkt-col">
+            <div class="node txt">Newsletter <span class="n-sub">CPG fee literacy</span></div>
+            <div class="node txt">Segment: KeHE sellers</div>
+            <div class="node txt">Segment: pre-pain</div>
+            <div class="node ghost">Re-surface → Warm Lead</div>
+          </div>
+          <div class="mkt-col">
+            <div class="node mkt">Education Drip <span class="n-sub">pre-pain brands</span></div>
+            <div class="node mkt">Email #1</div>
+            <div class="node mkt">Email #2 <span class="n-sub">delay</span></div>
+            <div class="node mkt">Ongoing</div>
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- DETAIL DRAWER -->
-  <div class="detail" id="detail">
-    <div class="placeholder">Select a channel above to see detail →</div>
+  <div class="foot">
+    <div><b>Spine:</b> Discovery Scheduled → Routing Guides Ingested → Design Partner Signed (Attio, real stages)</div>
+    <div><b>Pricing ladder:</b> Freemium (0–5 POs) → ~$930/mo (6–25) → higher tier (26–50) → ~$4,500/mo (100K+ vol). Recovery: 20–40¢/$1.</div>
+    <div><b>Guardrail:</b> brief→draft for all founder voice · research peer-review vs. verified claims · no external send without Christian's approval.</div>
   </div>
 
-  <div class="note">
-    <strong>Sequencing note:</strong> outbound (LinkedIn automation, email, KeHE direct) runs independently of inbound — the two refine each other progressively rather than one gating the other. Content and nurture split along the pain-awareness axis surfaced by the podcast corpus: a <em>recognition</em> track for pain-aware brands (28 identified) and an <em>education</em> track for pre-pain ICP brands (140 identified). Pricing tiers: Freemium (0–5 POs) → ~$930/mo (6–25) → higher tiers → ~$4,500/mo (100K+ PO volume); deduction recovery at 20–40¢ per $1 recovered.
-  </div>
 </div>
-
-<script>
-const CH = [
-  {
-    id:"linkedin", name:"LinkedIn Automation", color:"var(--accent)", tag:"Inbound + Outbound",
-    status:"st-build", label:"BUILDING",
-    blurb:"Jordan founder-led content (3–5 posts/wk) + automated outreach to CPG brands.",
-    owner:"Owner: gtm-content (Jordan's voice) · peer-QC: gtm-research",
-    building:[
-      "Vocabulary-matched pillars — founders say chargebacks/OI/MCB/slotting, never \"deductions\"",
-      "Recognition posts for pain-aware brands; education posts for pre-pain brands",
-      "Automated connection + outreach to CPG founders in ICP",
-      "Deduction \"horror story\" series (e.g. $15K UNFI chargeback quote from corpus)"
-    ],
-    guard:["Brief-to-draft mandatory","Research peer-review vs verified_product_claims.md before ship"],
-    chips:["3–5 posts/wk","founder-led","vocabulary-matched"]
-  },
-  {
-    id:"email", name:"Email / Outbound Sequences", color:"var(--accent2)", tag:"Outbound",
-    status:"st-build", label:"BUILDING",
-    blurb:"Sequenced outreach against pain-aware prospect cohorts.",
-    owner:"Owner: gtm-outbound (copy) · lists: gtm-research",
-    building:[
-      "Recognition-track sequence to 28 pain-aware podcast brands (Sweet Kiwi, Jaju Pierogi, Harken Sweets…)",
-      "KeHE Holiday Show enriched prospect sequence",
-      "Reference-a-quote personalization (\"I heard you on Startup CPG describe…\")"
-    ],
-    guard:["No fabricated product claims","Human (Christian) approval before send"],
-    chips:["Clay/Apollo enriched","pain-scored","personalized"]
-  },
-  {
-    id:"content", name:"Content", color:"var(--accent)", tag:"Inbound",
-    status:"st-build", label:"BUILDING",
-    blurb:"Category-defining content in a near-empty competitive space (deductions = 0.04% of CPG podcast airtime).",
-    owner:"Owner: gtm-content · source: podcast corpus + verified claims",
-    building:[
-      "Terminology translation guide — MCB / OI / billback / AAP → plain English (lead magnet)",
-      "\"What your distributor actually charges you\" 5-part series (real $ figures w/ attribution)",
-      "\"Financially ready for KeHE?\" self-assessment scorecard → audit tool"
-    ],
-    guard:["Traces to verified_product_claims.md","No rule-reviewer metrics without approval"],
-    chips:["category-defining","zero competitors","SEO + lead magnet"]
-  },
-  {
-    id:"nurture", name:"Nurture Marketing", color:"var(--accent)", tag:"Inbound",
-    status:"st-plan", label:"PLANNED",
-    blurb:"Long-cycle drip for pre-pain ICP brands — plant the category before they feel the chargeback.",
-    owner:"Owner: gtm-content + gtm-outbound",
-    building:[
-      "Education drip to 140 pre-pain ICP brands from corpus",
-      "\"Here's what's coming in your KeHE invoice\" front-running content",
-      "Re-score for pain-articulation over time; promote to recognition track when signals appear"
-    ],
-    guard:["Content-first; activates as inbound pattern matures"],
-    chips:["140 pre-pain brands","category education","long cycle"]
-  },
-  {
-    id:"audit", name:"Audit Tool (as entry)", color:"var(--accent)", tag:"Lead magnet",
-    status:"st-build", label:"BUILDING",
-    blurb:"Also a standalone acquisition surface — direct traffic + shares into the audit.",
-    owner:"Owner: product + gtm-strategist",
-    building:[
-      "compliance-audit.tryeasyops.ai self-serve audit",
-      "Shareable result → viral loop within CPG founder community",
-      "Captures KeHE/UNFI status, PO volume, deductions found (moat data)"
-    ],
-    guard:["Result framing tied to contribution margin / fundraise-readiness"],
-    chips:["48-hr audit","self-serve","moat data"]
-  },
-  {
-    id:"partners", name:"Channel Partners", color:"var(--purple)", tag:"Partner-sourced",
-    status:"st-build", label:"BUILDING",
-    blurb:"Warm intros via brokers and 3PLs who sit between brands and distributors.",
-    owner:"Owner: gtm-strategist · via Christina Komen",
-    building:[
-      "CPG brokers — Presence and others via Christina Komen ($15K/mo consultant)",
-      "3PLs handling DTC→wholesale transitions (e.g. Good Company Ships)",
-      "VC-list activation — free portfolio-company audits (250-firm list, in motion)",
-      "Broker tool play — replace their spreadsheet deduction tracking"
-    ],
-    guard:["One intro can unlock 5–10 brand relationships"],
-    chips:["brokers","3PLs","VC portfolios"]
-  },
-  {
-    id:"kehe", name:"KeHE Holiday Show", color:"var(--warn)", tag:"Event-driven",
-    status:"st-build", label:"BUILDING",
-    blurb:"Direct outreach to scraped + enriched exhibitor list — immediate priority.",
-    owner:"Owner: gtm-research (scrape/enrich) → gtm-outbound",
-    building:[
-      "Enriched exhibitor prospect list (booth, category, ICP score, AAP likelihood)",
-      "Hocco / new-to-KeHE brands = strongest AAP candidates",
-      "Post-show timing: outreach when first deductions land and brands panic"
-    ],
-    guard:["Do not fabricate brand names; flag gaps"],
-    chips:["direct","time-sensitive","AAP angle"]
-  }
-];
-
-const channelsEl = document.getElementById('channels');
-const detailEl = document.getElementById('detail');
-
-CH.forEach(c=>{
-  const el=document.createElement('div');
-  el.className='card'; el.style.setProperty('--c',c.color); el.dataset.id=c.id;
-  el.innerHTML=`<h3>${c.name}<span class="tag">${c.tag}</span></h3>
-    <p>${c.blurb}</p><div class="owner">${c.owner}</div>`;
-  el.addEventListener('click',()=>select(c.id));
-  channelsEl.appendChild(el);
-});
-
-function select(id){
-  document.querySelectorAll('.card').forEach(x=>x.classList.toggle('active',x.dataset.id===id));
-  const c=CH.find(x=>x.id===id);
-  detailEl.innerHTML=`
-    <div class="detail-head">
-      <h2>${c.name}<span class="status ${c.status}">${c.label}</span></h2>
-      <div class="k">${c.owner}</div>
-    </div>
-    <div class="detail-body">
-      <div>
-        <h4>What we're building</h4>
-        <ul>${c.building.map(b=>`<li>${b}</li>`).join('')}</ul>
-      </div>
-      <div>
-        <h4>Guardrails</h4>
-        <ul>${c.guard.map(g=>`<li>${g}</li>`).join('')}</ul>
-        <h4 style="margin-top:16px">Signals</h4>
-        <div class="chips">${c.chips.map(ch=>`<span class="chip">${ch}</span>`).join('')}</div>
-      </div>
-    </div>`;
-}
-select('linkedin');
-</script>
+</div>
 </body>
 </html>
