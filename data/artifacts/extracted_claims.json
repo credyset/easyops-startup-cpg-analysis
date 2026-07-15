@@ -1,0 +1,74 @@
+[
+  {
+    "claim": "KeHE's Administrative Allowance Program (AAP) is a 2% off-invoice allowance for brands in their first year that opts them out of intro allowances, MCB fees, and manual chargeback charges",
+    "speaker": "Tim Dornfeld",
+    "role": "KeHE VP",
+    "episode": "#189 - Distributor Spotlight: Tim Dornfeld, KeHE",
+    "easyops_relevance": "Direct validation of EasyOps's target use case — new brands face 'cost uncertainty' from unexpected fees on first POs",
+    "gtm_use": "Content/outreach: 'Here's what KeHE's own VP says about the fee shock new brands face'",
+    "quote": "One of the most challenging things for new and emerging brands is that cost uncertainty — getting hit with those first POs and you're expecting this much to come in but then these new fees hit you and all of a sudden you're scrambling for cash flow"
+  },
+  {
+    "claim": "Regional distributors don't charge chargebacks or slotting fees — only UNFI and KeHE do at scale",
+    "speaker": "Vanessa White",
+    "role": "Founder (Jaju Pierogi)",
+    "episode": "#136: Growing Jaju Pierogi with Social Media Pro Vanessa White",
+    "easyops_relevance": "Validates the ICP pain: chargebacks/slotting only become a problem when brands move from regional to national distribution",
+    "gtm_use": "Content: 'The hidden cost of scaling from regional to national distribution'",
+    "quote": "We got a mistake chargeback from UNFI for $15,000 at Christmas time — an erroneous slotting fee that wasn't meant to happen"
+  },
+  {
+    "claim": "The only margin that matters is contribution margin, not product margin — sophisticated investors see through high product margin",
+    "speaker": "Alex Michaelsen",
+    "role": "Founder (Leisure)",
+    "episode": "#237 - Inside Founders & Funders with Alex Michaelsen",
+    "easyops_relevance": "Frames EasyOps as a contribution margin improvement tool, not just a cost recovery tool",
+    "gtm_use": "Investor pitch: 'We improve the metric that determines whether you can raise your next round'",
+    "quote": "When you're first getting started, everyone focuses on product margin because it's the highest number. But the more sophisticated the investors you work with, the more they'll see through that. There's only one margin that matters and it's contribution margin"
+  },
+  {
+    "claim": "Payment terms of net 30/60/90 create cash flow crises for emerging brands that can't float inventory costs while waiting for retailer payment",
+    "speaker": "Gloria Allorbi",
+    "role": "Founder (Gloria's Shito)",
+    "episode": "Founder Feature: Gloria Allorbi of Gloria's Shito",
+    "easyops_relevance": "Deduction errors compound the cash flow problem — if you're waiting 90 days for payment AND losing 5-15% to incorrect deductions, the math breaks",
+    "gtm_use": "Content: 'Net 60 payment terms + erroneous deductions = why your runway is shorter than you think'",
+    "quote": "When retailers put a purchase order, there are payment terms of net 30, net 60, net 90 — meaning I'm not getting that money upfront. So I have to be able to afford that inventory with capital to then wait for the retailer to pay me"
+  },
+  {
+    "claim": "KeHE MCB fees and performance fees on manual chargebacks are among the hidden costs that hit new brands unexpectedly",
+    "speaker": "Tim Dornfeld",
+    "role": "KeHE VP",
+    "episode": "#189 - Distributor Spotlight: Tim Dornfeld, KeHE",
+    "easyops_relevance": "MCB fees are exactly what EasyOps's rule-reviewer audits for",
+    "gtm_use": "Outreach: Reference this episode when reaching out to brands that recently joined KeHE",
+    "quote": "Intro allowances when going into a DC, MCB fees, extra performance fees on manual chargebacks or charges coming back from retailers"
+  },
+  {
+    "claim": "Brands need a diversified distribution strategy — regional distributors as buffer against UNFI/KeHE chargeback volatility",
+    "speaker": "Vanessa White",
+    "role": "Founder (Jaju Pierogi)",
+    "episode": "#136: Growing Jaju Pierogi with Social Media Pro Vanessa White",
+    "easyops_relevance": "Even with diversification, brands still sell through UNFI/KeHE for chain grocery — they can't avoid the deduction problem",
+    "gtm_use": "Content: 'Diversification protects your top line, but who's protecting your bottom line from deductions?'",
+    "quote": "If something happens — we got a mistake chargeback for $15,000 — at least we have all these other distributors that are going to be paying their bills with no surprises"
+  },
+  {
+    "claim": "Founders don't understand the different types of margins until years into running their business",
+    "speaker": "Alex Michaelsen",
+    "role": "Founder (Leisure)",
+    "episode": "#237 - Inside Founders & Funders with Alex Michaelsen",
+    "easyops_relevance": "Education opportunity — EasyOps can be the brand that teaches margin literacy alongside deduction recovery",
+    "gtm_use": "Content pillar: 'CPG Margin Literacy' series on Jordan's LinkedIn",
+    "quote": "It took me a couple years to kind of figure out what the hell everyone was talking about on margin. And oftentimes when you hear it on podcasts or LinkedIn, it's just not everyone is saying a contradictory definition"
+  },
+  {
+    "claim": "Trade spend and promotional funding is a significant budget line item that emerging brands underestimate",
+    "speaker": "Multiple guests across episodes",
+    "role": "Various",
+    "episode": "Multiple episodes",
+    "easyops_relevance": "Trade spend visibility is EasyOps's core value proposition — brands can't manage what they can't measure",
+    "gtm_use": "Audit tool positioning: 'See where your trade spend actually goes'",
+    "quote": "N/A — synthesized from multiple episodes"
+  }
+]

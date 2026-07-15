@@ -1,0 +1,847 @@
+[
+  {
+    "title": "#164- UNFI UpNext Program: Aaron May",
+    "published": "Tue, 08 Oct 2024 00:00:00 -0700",
+    "composite_score": 50.0,
+    "total_relevant_chunks": 26,
+    "keyword_score": 34,
+    "deduction_mentions": 3,
+    "margin_mentions": 0,
+    "distribution_mentions": 24,
+    "unique_keywords": [
+      "broker",
+      "deduct",
+      "distributor",
+      "kehe",
+      "unfi"
+    ]
+  },
+  {
+    "title": "Unpacking CPG Finance: Ryan Williams, Founder of Northall",
+    "published": "Sat, 21 Feb 2026 00:00:00 -0800",
+    "composite_score": 43.5,
+    "total_relevant_chunks": 12,
+    "keyword_score": 23,
+    "deduction_mentions": 4,
+    "margin_mentions": 9,
+    "distribution_mentions": 2,
+    "unique_keywords": [
+      "accrual",
+      "contribution margin",
+      "deduct",
+      "distributor",
+      "freight",
+      "margin",
+      "unfi"
+    ]
+  },
+  {
+    "title": "#189 -  Distributor Spotlight: Tim Dornfeld, KeHE",
+    "published": "Tue, 01 Apr 2025 00:00:00 -0700",
+    "composite_score": 42.0,
+    "total_relevant_chunks": 20,
+    "keyword_score": 34,
+    "deduction_mentions": 3,
+    "margin_mentions": 2,
+    "distribution_mentions": 12,
+    "unique_keywords": [
+      "allowance",
+      "billback",
+      "broker",
+      "chargeback",
+      "deduct",
+      "distributor",
+      "margin",
+      "mcb",
+      "off invoice",
+      "slotting",
+      "velocity"
+    ]
+  },
+  {
+    "title": "#167 - 5 Financial Factors That Make or Break E-commerce Brands with Paul Bianco",
+    "published": "Tue, 29 Oct 2024 00:00:00 -0700",
+    "composite_score": 41.0,
+    "total_relevant_chunks": 16,
+    "keyword_score": 16,
+    "deduction_mentions": 1,
+    "margin_mentions": 15,
+    "distribution_mentions": 0,
+    "unique_keywords": [
+      "deduct",
+      "margin"
+    ]
+  },
+  {
+    "title": "#215 - Ask-Me-Anything with Sales Pro Matt Merson",
+    "published": "Tue, 23 Sep 2025 00:00:00 -0700",
+    "composite_score": 37.5,
+    "total_relevant_chunks": 21,
+    "keyword_score": 31,
+    "deduction_mentions": 0,
+    "margin_mentions": 2,
+    "distribution_mentions": 18,
+    "unique_keywords": [
+      "allowance",
+      "broker",
+      "distributor",
+      "margin",
+      "unfi",
+      "velocity"
+    ]
+  },
+  {
+    "title": "#168 - CPG Founder Life - What to Expect: Paul Voge",
+    "published": "Tue, 05 Nov 2024 00:00:00 -0800",
+    "composite_score": 37.0,
+    "total_relevant_chunks": 13,
+    "keyword_score": 18,
+    "deduction_mentions": 2,
+    "margin_mentions": 8,
+    "distribution_mentions": 6,
+    "unique_keywords": [
+      "distributor",
+      "margin",
+      "off invoice",
+      "trade spend",
+      "velocity"
+    ]
+  },
+  {
+    "title": "#145 Distributor Trade Shows with Samuel Jacobson, HOP WTR",
+    "published": "Tue, 04 Jun 2024 00:00:00 -0700",
+    "composite_score": 37.0,
+    "total_relevant_chunks": 21,
+    "keyword_score": 28,
+    "deduction_mentions": 2,
+    "margin_mentions": 2,
+    "distribution_mentions": 13,
+    "unique_keywords": [
+      "broker",
+      "chargeback",
+      "distributor",
+      "margin",
+      "mcb",
+      "off invoice",
+      "slotting",
+      "trade spend",
+      "unfi"
+    ]
+  },
+  {
+    "title": "Bonus: Getting Into Retail & Tips from a Buyer",
+    "published": "Sat, 30 Dec 2023 00:08:00 -0800",
+    "composite_score": 35.5,
+    "total_relevant_chunks": 16,
+    "keyword_score": 29,
+    "deduction_mentions": 1,
+    "margin_mentions": 4,
+    "distribution_mentions": 10,
+    "unique_keywords": [
+      "broker",
+      "chargeback",
+      "deduct",
+      "distributor",
+      "margin",
+      "shortage",
+      "unfi",
+      "velocity"
+    ]
+  },
+  {
+    "title": "#237 - Inside Founders & Funders with Alex Michaelsen from Leisure Hydration and Alex Malamatinas from Melitas Ventures",
+    "published": "Tue, 24 Feb 2026 00:00:00 -0800",
+    "composite_score": 35.0,
+    "total_relevant_chunks": 9,
+    "keyword_score": 22,
+    "deduction_mentions": 2,
+    "margin_mentions": 9,
+    "distribution_mentions": 0,
+    "unique_keywords": [
+      "contribution margin",
+      "deduct",
+      "freight",
+      "margin",
+      "trade spend",
+      "velocity"
+    ]
+  },
+  {
+    "title": "#205 - CPG Brokers 101 with Matt Merson",
+    "published": "Tue, 15 Jul 2025 00:00:00 -0700",
+    "composite_score": 34.5,
+    "total_relevant_chunks": 39,
+    "keyword_score": 53,
+    "deduction_mentions": 1,
+    "margin_mentions": 0,
+    "distribution_mentions": 5,
+    "unique_keywords": [
+      "broker",
+      "deduct",
+      "distributor",
+      "mcb",
+      "slotting",
+      "unfi",
+      "velocity"
+    ]
+  },
+  {
+    "title": "Investor Spotlight: Alcohol & Vice Investing with Jason Sherman of Top Shelf Ventures",
+    "published": "Sat, 16 Aug 2025 00:00:00 -0700",
+    "composite_score": 33.5,
+    "total_relevant_chunks": 24,
+    "keyword_score": 29,
+    "deduction_mentions": 0,
+    "margin_mentions": 4,
+    "distribution_mentions": 11,
+    "unique_keywords": [
+      "distributor",
+      "margin",
+      "velocity"
+    ]
+  },
+  {
+    "title": "#204 - Investor Spotlight: Habitat Partners with Daniel Faierman",
+    "published": "Tue, 08 Jul 2025 00:00:00 -0700",
+    "composite_score": 31.5,
+    "total_relevant_chunks": 15,
+    "keyword_score": 17,
+    "deduction_mentions": 0,
+    "margin_mentions": 11,
+    "distribution_mentions": 1,
+    "unique_keywords": [
+      "audit",
+      "distributor",
+      "margin",
+      "velocity"
+    ]
+  },
+  {
+    "title": "#223 - Startup CPG Innovation Sections at UNFI Selling Shows ft. Jubilee’s and Loopini Pizza",
+    "published": "Tue, 18 Nov 2025 00:00:00 -0800",
+    "composite_score": 30.5,
+    "total_relevant_chunks": 19,
+    "keyword_score": 25,
+    "deduction_mentions": 0,
+    "margin_mentions": 1,
+    "distribution_mentions": 16,
+    "unique_keywords": [
+      "broker",
+      "distributor",
+      "margin",
+      "unfi",
+      "velocity"
+    ]
+  },
+  {
+    "title": "#159 - EDI 101: Emily Curran, SPS Commerce",
+    "published": "Tue, 03 Sep 2024 00:00:00 -0700",
+    "composite_score": 30.5,
+    "total_relevant_chunks": 16,
+    "keyword_score": 23,
+    "deduction_mentions": 0,
+    "margin_mentions": 2,
+    "distribution_mentions": 15,
+    "unique_keywords": [
+      "broker",
+      "distributor",
+      "margin",
+      "payment terms",
+      "purchase order"
+    ]
+  },
+  {
+    "title": "#173 -  The Food Investors: Capital for Emerging CPGs",
+    "published": "Tue, 10 Dec 2024 00:00:00 -0800",
+    "composite_score": 27.0,
+    "total_relevant_chunks": 12,
+    "keyword_score": 16,
+    "deduction_mentions": 0,
+    "margin_mentions": 9,
+    "distribution_mentions": 1,
+    "unique_keywords": [
+      "audit",
+      "contribution margin",
+      "distributor",
+      "freight",
+      "margin",
+      "velocity"
+    ]
+  },
+  {
+    "title": "#152 Direct Store Delivery 101:  Allison Taylor, Pint Size Hawaii, and Ahmed Chehade, Good Stuff",
+    "published": "Tue, 16 Jul 2024 00:00:00 -0700",
+    "composite_score": 27.0,
+    "total_relevant_chunks": 15,
+    "keyword_score": 22,
+    "deduction_mentions": 0,
+    "margin_mentions": 2,
+    "distribution_mentions": 12,
+    "unique_keywords": [
+      "broker",
+      "distributor",
+      "freight",
+      "margin",
+      "unfi",
+      "velocity"
+    ]
+  },
+  {
+    "title": "#209 - Operations Law 101: Co-Mans & Distribution Deals",
+    "published": "Tue, 12 Aug 2025 00:00:00 -0700",
+    "composite_score": 25.5,
+    "total_relevant_chunks": 16,
+    "keyword_score": 21,
+    "deduction_mentions": 0,
+    "margin_mentions": 1,
+    "distribution_mentions": 13,
+    "unique_keywords": [
+      "broker",
+      "distributor",
+      "freight",
+      "margin",
+      "payment terms",
+      "slotting",
+      "unfi"
+    ]
+  },
+  {
+    "title": "#121 How to Launch in Foodservice with Sales Pro Jenna Cameron Part 1",
+    "published": "Tue, 02 Jan 2024 00:00:00 -0800",
+    "composite_score": 24.0,
+    "total_relevant_chunks": 13,
+    "keyword_score": 16,
+    "deduction_mentions": 0,
+    "margin_mentions": 3,
+    "distribution_mentions": 10,
+    "unique_keywords": [
+      "broker",
+      "distributor",
+      "margin",
+      "purchase order",
+      "slotting"
+    ]
+  },
+  {
+    "title": "Investor Spotlight: Liz Myslik of Loft Growth Partners",
+    "published": "Sat, 25 Oct 2025 00:00:00 -0700",
+    "composite_score": 24.0,
+    "total_relevant_chunks": 10,
+    "keyword_score": 12,
+    "deduction_mentions": 0,
+    "margin_mentions": 8,
+    "distribution_mentions": 2,
+    "unique_keywords": [
+      "broker",
+      "distributor",
+      "margin",
+      "velocity"
+    ]
+  },
+  {
+    "title": "#151 - Field Sales Part 2: Namik Soltan, GNGR Labs",
+    "published": "Wed, 10 Jul 2024 00:00:00 -0700",
+    "composite_score": 24.0,
+    "total_relevant_chunks": 15,
+    "keyword_score": 16,
+    "deduction_mentions": 0,
+    "margin_mentions": 1,
+    "distribution_mentions": 14,
+    "unique_keywords": [
+      "distributor",
+      "margin",
+      "purchase order"
+    ]
+  },
+  {
+    "title": "#242 - KeHE Grocery Run Recap",
+    "published": "Tue, 31 Mar 2026 00:00:00 -0700",
+    "composite_score": 23.5,
+    "total_relevant_chunks": 14,
+    "keyword_score": 19,
+    "deduction_mentions": 0,
+    "margin_mentions": 0,
+    "distribution_mentions": 14,
+    "unique_keywords": [
+      "broker",
+      "distributor",
+      "kehe"
+    ]
+  },
+  {
+    "title": "#139  Inventory Management for Early Brands: Cory Hebert from Cin7, and Jamie Valenti-Jordan, Catapult Commercialization Services",
+    "published": "Tue, 23 Apr 2024 00:00:00 -0700",
+    "composite_score": 23.0,
+    "total_relevant_chunks": 9,
+    "keyword_score": 14,
+    "deduction_mentions": 4,
+    "margin_mentions": 0,
+    "distribution_mentions": 4,
+    "unique_keywords": [
+      "deduct",
+      "distributor",
+      "payment terms",
+      "purchase order"
+    ]
+  },
+  {
+    "title": "#174 - Buyer Spotlight: Heidi Traore and Jeanette Bloss, National Co+op Grocers",
+    "published": "Tue, 17 Dec 2024 20:10:53 -0800",
+    "composite_score": 23.0,
+    "total_relevant_chunks": 18,
+    "keyword_score": 24,
+    "deduction_mentions": 0,
+    "margin_mentions": 0,
+    "distribution_mentions": 11,
+    "unique_keywords": [
+      "broker",
+      "distributor",
+      "slotting",
+      "unfi",
+      "velocity"
+    ]
+  },
+  {
+    "title": "Investor Spotlight: Trevor Rechnitz, Vanterra Ventures",
+    "published": "Sat, 17 Jan 2026 00:00:00 -0800",
+    "composite_score": 23.0,
+    "total_relevant_chunks": 9,
+    "keyword_score": 10,
+    "deduction_mentions": 0,
+    "margin_mentions": 9,
+    "distribution_mentions": 0,
+    "unique_keywords": [
+      "freight",
+      "margin"
+    ]
+  },
+  {
+    "title": "#219 - Managing People at Work with Seth Goldman of JUST Ice Tea",
+    "published": "Tue, 21 Oct 2025 00:00:00 -0700",
+    "composite_score": 22.0,
+    "total_relevant_chunks": 8,
+    "keyword_score": 12,
+    "deduction_mentions": 2,
+    "margin_mentions": 3,
+    "distribution_mentions": 4,
+    "unique_keywords": [
+      "distributor",
+      "margin",
+      "trade spend",
+      "unfi",
+      "velocity"
+    ]
+  },
+  {
+    "title": "#123 Jeff Church's Lessons on Entrepreneurship, from Suja Juice $140 Million/year Success to Shutting down Rowdy Energy",
+    "published": "Tue, 09 Jan 2024 00:00:00 -0800",
+    "composite_score": 22.0,
+    "total_relevant_chunks": 11,
+    "keyword_score": 12,
+    "deduction_mentions": 0,
+    "margin_mentions": 8,
+    "distribution_mentions": 0,
+    "unique_keywords": [
+      "margin",
+      "slotting",
+      "velocity"
+    ]
+  },
+  {
+    "title": "UPC Management: Jake Deleon, Fila Manila and Alex Sorenson, Blank Slate Kitchen",
+    "published": "Fri, 10 May 2024 00:00:00 -0700",
+    "composite_score": 21.5,
+    "total_relevant_chunks": 11,
+    "keyword_score": 15,
+    "deduction_mentions": 1,
+    "margin_mentions": 2,
+    "distribution_mentions": 7,
+    "unique_keywords": [
+      "broker",
+      "deduct",
+      "distributor",
+      "freight",
+      "margin",
+      "unfi",
+      "velocity"
+    ]
+  },
+  {
+    "title": "#184 -Distributor Spotlight: Karen Slusher of Azure Standard",
+    "published": "Tue, 25 Feb 2025 00:00:00 -0800",
+    "composite_score": 20.5,
+    "total_relevant_chunks": 10,
+    "keyword_score": 13,
+    "deduction_mentions": 2,
+    "margin_mentions": 0,
+    "distribution_mentions": 8,
+    "unique_keywords": [
+      "deduct",
+      "distributor",
+      "freight",
+      "mcb",
+      "shortage",
+      "trade spend"
+    ]
+  },
+  {
+    "title": "Late Stage Insights For Early Brands to Learn From: Aaron Garcia, Main Post Partners",
+    "published": "Sat, 15 Nov 2025 00:00:00 -0800",
+    "composite_score": 20.5,
+    "total_relevant_chunks": 8,
+    "keyword_score": 9,
+    "deduction_mentions": 0,
+    "margin_mentions": 8,
+    "distribution_mentions": 0,
+    "unique_keywords": [
+      "margin",
+      "velocity"
+    ]
+  },
+  {
+    "title": "#150 - Field Sales Part 1: Sean Lynch, Halfday & Liquid Death",
+    "published": "Tue, 09 Jul 2024 00:00:00 -0700",
+    "composite_score": 20.0,
+    "total_relevant_chunks": 13,
+    "keyword_score": 16,
+    "deduction_mentions": 0,
+    "margin_mentions": 0,
+    "distribution_mentions": 12,
+    "unique_keywords": [
+      "broker",
+      "distributor",
+      "kehe",
+      "unfi"
+    ]
+  },
+  {
+    "title": "#206 - Exit Interview: The Sale of Aura Bora",
+    "published": "Tue, 22 Jul 2025 00:00:00 -0700",
+    "composite_score": 19.5,
+    "total_relevant_chunks": 7,
+    "keyword_score": 9,
+    "deduction_mentions": 0,
+    "margin_mentions": 7,
+    "distribution_mentions": 1,
+    "unique_keywords": [
+      "distributor",
+      "freight",
+      "margin"
+    ]
+  },
+  {
+    "title": "#256 - What Is Grocery Run? with Dan Choi (NA Beverage Co) and Stephanie McGregor (Ringa)",
+    "published": "Tue, 07 Jul 2026 00:49:26 -0700",
+    "composite_score": 19.0,
+    "total_relevant_chunks": 13,
+    "keyword_score": 14,
+    "deduction_mentions": 0,
+    "margin_mentions": 0,
+    "distribution_mentions": 12,
+    "unique_keywords": [
+      "broker",
+      "distributor",
+      "unfi"
+    ]
+  },
+  {
+    "title": "#122 How to Launch in Foodservice with Sales Pro Jenna Cameron Part 2",
+    "published": "Thu, 04 Jan 2024 00:00:00 -0800",
+    "composite_score": 19.0,
+    "total_relevant_chunks": 13,
+    "keyword_score": 18,
+    "deduction_mentions": 0,
+    "margin_mentions": 0,
+    "distribution_mentions": 10,
+    "unique_keywords": [
+      "broker",
+      "distributor",
+      "unfi"
+    ]
+  },
+  {
+    "title": "#118 From Bicycle Beginnings to Global Recognitions with Chlorophyll Water Founder, Matt Levine",
+    "published": "Tue, 12 Dec 2023 07:00:00 -0800",
+    "composite_score": 19.0,
+    "total_relevant_chunks": 13,
+    "keyword_score": 16,
+    "deduction_mentions": 0,
+    "margin_mentions": 3,
+    "distribution_mentions": 5,
+    "unique_keywords": [
+      "audit",
+      "broker",
+      "distributor",
+      "margin",
+      "unfi",
+      "velocity"
+    ]
+  },
+  {
+    "title": "How to Win At Kroger",
+    "published": "Fri, 23 Feb 2024 00:00:00 -0800",
+    "composite_score": 18.5,
+    "total_relevant_chunks": 16,
+    "keyword_score": 23,
+    "deduction_mentions": 0,
+    "margin_mentions": 1,
+    "distribution_mentions": 5,
+    "unique_keywords": [
+      "allowance",
+      "broker",
+      "distributor",
+      "margin",
+      "purchase order",
+      "slotting",
+      "unfi",
+      "velocity"
+    ]
+  },
+  {
+    "title": "#218 - Forecasting 101 with Graza & Drivepoint",
+    "published": "Tue, 14 Oct 2025 00:00:00 -0700",
+    "composite_score": 18.5,
+    "total_relevant_chunks": 15,
+    "keyword_score": 19,
+    "deduction_mentions": 0,
+    "margin_mentions": 1,
+    "distribution_mentions": 7,
+    "unique_keywords": [
+      "broker",
+      "distributor",
+      "margin",
+      "velocity"
+    ]
+  },
+  {
+    "title": "Investor Spotlight: Alex Malamatinas of Melitas Ventures",
+    "published": "Sat, 22 Nov 2025 00:00:00 -0800",
+    "composite_score": 17.5,
+    "total_relevant_chunks": 6,
+    "keyword_score": 11,
+    "deduction_mentions": 0,
+    "margin_mentions": 6,
+    "distribution_mentions": 0,
+    "unique_keywords": [
+      "aap",
+      "contribution margin",
+      "margin"
+    ]
+  },
+  {
+    "title": "#193 - How to Drive Velocity with Matt Merson",
+    "published": "Tue, 22 Apr 2025 00:00:00 -0700",
+    "composite_score": 17.5,
+    "total_relevant_chunks": 20,
+    "keyword_score": 25,
+    "deduction_mentions": 0,
+    "margin_mentions": 1,
+    "distribution_mentions": 3,
+    "unique_keywords": [
+      "distributor",
+      "margin",
+      "off invoice",
+      "scan back",
+      "slotting",
+      "velocity"
+    ]
+  },
+  {
+    "title": "#221 - QVC 101 with Häppy Candy and Freestyle Snacks",
+    "published": "Tue, 04 Nov 2025 00:00:00 -0800",
+    "composite_score": 17.5,
+    "total_relevant_chunks": 14,
+    "keyword_score": 17,
+    "deduction_mentions": 0,
+    "margin_mentions": 4,
+    "distribution_mentions": 1,
+    "unique_keywords": [
+      "broker",
+      "compliance",
+      "distributor",
+      "margin"
+    ]
+  },
+  {
+    "title": "#177 -  Finding Your Co-Man: Lance Schwarzkopf of Copack",
+    "published": "Tue, 07 Jan 2025 00:00:00 -0800",
+    "composite_score": 17.0,
+    "total_relevant_chunks": 9,
+    "keyword_score": 12,
+    "deduction_mentions": 0,
+    "margin_mentions": 3,
+    "distribution_mentions": 5,
+    "unique_keywords": [
+      "allowance",
+      "audit",
+      "broker",
+      "distributor",
+      "margin"
+    ]
+  },
+  {
+    "title": "Founder Feature: BJ McCaslin of Holy! Water",
+    "published": "Fri, 25 Apr 2025 00:00:00 -0700",
+    "composite_score": 17.0,
+    "total_relevant_chunks": 11,
+    "keyword_score": 12,
+    "deduction_mentions": 1,
+    "margin_mentions": 1,
+    "distribution_mentions": 6,
+    "unique_keywords": [
+      "broker",
+      "distributor",
+      "margin",
+      "trade spend",
+      "velocity"
+    ]
+  },
+  {
+    "title": "#162 - Ops Nightmares, Powered by Crstl",
+    "published": "Tue, 24 Sep 2024 00:00:00 -0700",
+    "composite_score": 16.5,
+    "total_relevant_chunks": 10,
+    "keyword_score": 15,
+    "deduction_mentions": 2,
+    "margin_mentions": 0,
+    "distribution_mentions": 3,
+    "unique_keywords": [
+      "broker",
+      "chargeback",
+      "distributor",
+      "freight",
+      "kehe",
+      "purchase order",
+      "unfi",
+      "velocity"
+    ]
+  },
+  {
+    "title": "Founder Feature: Marc Brown of ONOIN",
+    "published": "Fri, 15 May 2026 00:00:00 -0700",
+    "composite_score": 16.5,
+    "total_relevant_chunks": 11,
+    "keyword_score": 13,
+    "deduction_mentions": 0,
+    "margin_mentions": 3,
+    "distribution_mentions": 4,
+    "unique_keywords": [
+      "audit",
+      "broker",
+      "distributor",
+      "freight",
+      "margin",
+      "slotting",
+      "velocity"
+    ]
+  },
+  {
+    "title": "Founder + Funder: Fundraising, Retail Growth, and Building a Modern Hydration Brand with Alex Michaelsen of Leisure Hydration and Ryan Springer of Midnight",
+    "published": "Sat, 27 Jun 2026 00:00:00 -0700",
+    "composite_score": 16.5,
+    "total_relevant_chunks": 7,
+    "keyword_score": 9,
+    "deduction_mentions": 0,
+    "margin_mentions": 6,
+    "distribution_mentions": 0,
+    "unique_keywords": [
+      "margin",
+      "velocity"
+    ]
+  },
+  {
+    "title": "#160 - Whole Foods 101 with Kristin Sherman, Kelly Landrieu, and George Daines",
+    "published": "Tue, 10 Sep 2024 00:00:00 -0700",
+    "composite_score": 16.0,
+    "total_relevant_chunks": 16,
+    "keyword_score": 20,
+    "deduction_mentions": 0,
+    "margin_mentions": 2,
+    "distribution_mentions": 2,
+    "unique_keywords": [
+      "audit",
+      "broker",
+      "distributor",
+      "margin",
+      "slotting",
+      "unfi",
+      "velocity"
+    ]
+  },
+  {
+    "title": "Investor Spotlight: Alex Borschow, Rocana Ventures",
+    "published": "Sat, 20 Dec 2025 00:00:00 -0800",
+    "composite_score": 16.0,
+    "total_relevant_chunks": 7,
+    "keyword_score": 10,
+    "deduction_mentions": 1,
+    "margin_mentions": 4,
+    "distribution_mentions": 0,
+    "unique_keywords": [
+      "broker",
+      "contribution margin",
+      "margin",
+      "trade spend",
+      "velocity"
+    ]
+  },
+  {
+    "title": "#230 - From Self-Distribution to Full-Service Distributor: Scaling Ops with Smidge Beverage and Cin7",
+    "published": "Tue, 06 Jan 2026 00:00:00 -0800",
+    "composite_score": 15.5,
+    "total_relevant_chunks": 10,
+    "keyword_score": 11,
+    "deduction_mentions": 0,
+    "margin_mentions": 0,
+    "distribution_mentions": 10,
+    "unique_keywords": [
+      "distributor",
+      "velocity"
+    ]
+  },
+  {
+    "title": "Investor Spotlight: Founder Investor Fit, Gross Margins, and the KPIs That Actually Drive Consumer Businesses - Rana Taghdisi Argenio, Palette Ventures",
+    "published": "Sat, 06 Jun 2026 00:00:00 -0700",
+    "composite_score": 15.5,
+    "total_relevant_chunks": 6,
+    "keyword_score": 7,
+    "deduction_mentions": 0,
+    "margin_mentions": 6,
+    "distribution_mentions": 0,
+    "unique_keywords": [
+      "contribution margin",
+      "margin"
+    ]
+  },
+  {
+    "title": "#185 - Commercial Kitchen vs. Co-Man: Where to Make Your First $1M of Product",
+    "published": "Tue, 04 Mar 2025 00:00:00 -0800",
+    "composite_score": 15.0,
+    "total_relevant_chunks": 8,
+    "keyword_score": 8,
+    "deduction_mentions": 0,
+    "margin_mentions": 5,
+    "distribution_mentions": 1,
+    "unique_keywords": [
+      "audit",
+      "distributor",
+      "margin",
+      "shortage"
+    ]
+  },
+  {
+    "title": "#241 - Breaking Into Misfits Market: What the Buying Team Actually Wants",
+    "published": "Tue, 24 Mar 2026 00:00:00 -0700",
+    "composite_score": 14.5,
+    "total_relevant_chunks": 8,
+    "keyword_score": 11,
+    "deduction_mentions": 0,
+    "margin_mentions": 4,
+    "distribution_mentions": 1,
+    "unique_keywords": [
+      "margin",
+      "unfi",
+      "velocity"
+    ]
+  }
+]

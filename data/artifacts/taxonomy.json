@@ -1,0 +1,110 @@
+[
+  {
+    "topic": "Skincare & beauty CPG",
+    "description": "Personal care, skincare formulation, body care brands, gender-neutral products, clean beauty."
+  },
+  {
+    "topic": "AI tools & automation for CPG",
+    "description": "Using AI/LLMs for forecasting, content creation, research, operations efficiency in CPG brands."
+  },
+  {
+    "topic": "Label compliance & litigation risk",
+    "description": "FDA labeling rules, class action lawsuits, claims substantiation, regulatory enforcement, working with CPG attorneys."
+  },
+  {
+    "topic": "Legal structure & co-man contracts",
+    "description": "Entity formation, equity agreements, co-manufacturer contracts, distribution agreements, legal protections for founders."
+  },
+  {
+    "topic": "Fundraising & investor relations",
+    "description": "Raising rounds, investor diligence, valuations, cap table, founder-investor fit, pitch practice, VC landscape."
+  },
+  {
+    "topic": "Influencer marketing & creator partnerships",
+    "description": "Working with micro/macro influencers, UGC, ambassador programs, content licensing, influencer compensation."
+  },
+  {
+    "topic": "Founder introductions & where-to-find",
+    "description": "Guest introductions, website/social handles, where to buy, closing segments. (Low-signal \u2014 may filter.)"
+  },
+  {
+    "topic": "Retail strategy & channel expansion",
+    "description": "Getting into retailers, regional vs national rollout, buyer meetings, Whole Foods/Target/Sprouts, shelf placement, velocity."
+  },
+  {
+    "topic": "Trade shows & live events",
+    "description": "Expo West, Fancy Food Show, Grocery Run, booth strategy, sampling at events, Natural Products Expo."
+  },
+  {
+    "topic": "Sustainability, impact & mission-driven brands",
+    "description": "B-corp certification, environmental impact, social mission, regenerative agriculture, DEI in CPG."
+  },
+  {
+    "topic": "Formulation & co-packing operations",
+    "description": "R&D, working with formulators, pilot runs, shelf stability, scaling recipes, co-packer relationships."
+  },
+  {
+    "topic": "Brokers & sales team structure",
+    "description": "When to hire brokers vs direct sales, broker management, field team, SVP of sales roles."
+  },
+  {
+    "topic": "Founder journey & brand origin story",
+    "description": "Personal backstories, career pivots into CPG, early days, motivation, category inspiration."
+  },
+  {
+    "topic": "Category trends & consumer behavior",
+    "description": "Beverage trends, better-for-you movement, functional ingredients, GLP-1 impact, category white space."
+  },
+  {
+    "topic": "Community events & brand announcements",
+    "description": "Startup CPG community updates, new program launches, member spotlights, Shelfies awards."
+  },
+  {
+    "topic": "DTC & local market traction",
+    "description": "Farmers markets, coffee shops, local retail, direct-to-consumer, building early traction before scaling."
+  },
+  {
+    "topic": "Marketing spend & brand building",
+    "description": "Paid media ROI, celebrity endorsements, brand awareness vs performance marketing, marketing budget allocation."
+  },
+  {
+    "topic": "Trade spend & deductions",
+    "description": "Distributor chargebacks, slotting fees, scan-based trading, spoils, MCBs, trade promotion management."
+  },
+  {
+    "topic": "Pricing architecture & unit economics",
+    "description": "COGS, contribution margin, pricing strategy, gross margin targets, profitability path."
+  },
+  {
+    "topic": "Distribution (UNFI/KeHE)",
+    "description": "Working with UNFI and KeHE, warehouse programs, DSD, distributor terms, onboarding."
+  },
+  {
+    "topic": "Packaging & format innovation",
+    "description": "Package design, shelf standout, format changes, sustainable packaging, can vs bottle vs pouch."
+  },
+  {
+    "topic": "Clean label & non-UPF",
+    "description": "Ultra-processed food scrutiny, clean ingredient decks, non-GMO, organic, Non-UPF Verified."
+  },
+  {
+    "topic": "Supply chain & sourcing",
+    "description": "Ingredient sourcing, supplier relationships, freight, 3PL, supply chain resilience."
+  },
+  {
+    "topic": "M&A & exit strategy",
+    "description": "Strategic acquirers, acquisition readiness, exit multiples, PE interest in CPG."
+  },
+  {
+    "topic": "Team building & hiring",
+    "description": "First hires, fractional roles, culture, co-founder dynamics, scaling the team."
+  },
+  {
+    "topic": "Ecommerce & Amazon",
+    "description": "Amazon strategy, Shopify, DTC economics, subscription models, online marketplace."
+  },
+  {
+    "topic": "Sampling & in-store demos",
+    "description": "Demo strategy, sampling programs, guerrilla activations, trial-to-purchase conversion."
+  }
+]
